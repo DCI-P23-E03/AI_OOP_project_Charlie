@@ -72,7 +72,7 @@ def main():
         # Add the assistant's message to the conversation and print it
         conversation.append({"role": "assistant", "content": assistant_message})
         print(f"Assistant: {assistant_message}\n")
-        print(response["usage"]["total_tokens"])
+        print(f"Tokens used: {response["usage"]["total_tokens"]}")
         #print(response)
         #print(conversation)
         prompt = input("User: ")   
