@@ -59,6 +59,7 @@ def main():
         #prompt = input("User: ")                                                     # USER INPUT
         #if prompt.lower() == "exit":
         #    break
+        print("\n")
         conversation.append({"role": "user", "content": prompt})
 
         # Get assistant's response
@@ -72,13 +73,14 @@ def main():
         # Add the assistant's message to the conversation and print it
         conversation.append({"role": "assistant", "content": assistant_message})
         print(f"Assistant: {assistant_message}\n")
-        print(f"Tokens used: {response["usage"]["total_tokens"]}")
+        print(f"Tokens used: {response['usage']['total_tokens']}\n")
         #print(response)
         #print(conversation)
         prompt = input("User: ")   
-        print("\n")
+        
         if prompt.lower() == "exit":
             break
 
 if __name__ == "__main__":
     main()
+
