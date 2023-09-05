@@ -96,7 +96,7 @@ class Menu(ABC):
 
 
     @abstractmethod
-    def execute(self, *args):
+    def execute(self):
         pass
 
     
@@ -113,10 +113,25 @@ class VerticalMenu(Menu):
             raise ValueError("Menu items too small")
         
 
-    def execute(self, *args):
+    def execute(self,*args):
         
-        print(self.selected)
-        return getch.getch()
+        def append_nested_list(nested_list,coords,to_append):
+            if len(coords)==1:
+                nested_list[coords[0]].extend(to_append)
+            else:
+                append_nested_list(nested_list[coords[0]],coords[1:],to_append)
+            return nested_list
+
+        x("clear")
+        for i in self.selected:
+            x_coords=self.coords[:-1]
+            x_coords.append(i)
+            print(f"Elaborating on {self._access_menu_item(x_coords)[0]}.")
+            append_nested_list(self.list_of_menu_items,x_coords,[["1"],["2"],["3"]])
+            print(self.list_of_menu_items)
+            getch.getch()
+        self.selected.clear()
+
     
     def _select_menu_item(self):
         
