@@ -12,15 +12,17 @@ class Menu(ABC):
     def __init__(self, list_of_menu_items, W):
         
         self.coords=[1,2,2,1]
+        self.selected=set()
         self.W=W
         self.N=len(list_of_menu_items)-1
         self.list_of_menu_items=list_of_menu_items
         self._menu = self._generate_menu()
         self.print_menu()
+        
 
-    @abstractmethod    
-    def _generate_menu(self):
-        pass
+    #@abstractmethod    
+    #def _generate_menu(self):
+    #    pass
         
     def print_menu(self):
         #x("clear")
@@ -63,6 +65,9 @@ class Menu(ABC):
             if len(self.list_of_menu_items[i])>1:
                 self.coords.append(1)
 
+    
+
+
     @abstractmethod
     def navigate_menu(self):
         while True:
@@ -94,22 +99,51 @@ class Menu(ABC):
     def execute(self, *args):
         pass
 
+    
+
 class VerticalMenu(Menu):
     
     def __init__(self, list_of_menu_items, W):
         super().__init__(list_of_menu_items, W)
+        #self.selected=set()
+        
         if 2*self.N>super().MAX_VERTICAL_SIZE:
             raise ValueError("Menu too large") 
+        if self.W<6:
+            raise ValueError("Menu items too small")
         
 
     def execute(self, *args):
         
-        print(self.coords)
+        print(self.selected)
         return getch.getch()
+    
+    def _select_menu_item(self):
+        
+        if len(self._access_menu_item(self.coords))==1:
+            if self.coords[-1] not in self.selected:
+                self.selected.add(self.coords[-1])
+                
+            else:
+                self.selected.discard(self.coords[-1])
+                
+
+    def _close_menu_item(self):
+        super()._close_menu_item()
+        self.selected.clear()
+
+    def _open_menu_item(self):
+        if len(self._access_menu_item(self.coords))>1:
+            self.coords.append(1)
+            self.selected.clear()
+        else:
+            return self.execute(*self.coords)
+
     
     def navigate_menu(self):
         
         while True:
+            x("clear")
             self._menu = self._generate_menu()
             self.print_menu()
             #depth=len(self.coords)
@@ -122,12 +156,19 @@ class VerticalMenu(Menu):
                 self._move_up_menu()
             if move.isdigit():
                 self._switch_top_menu_item(int(move))
+            if move=="f":
+                self._select_menu_item()
             if move == "d" or move == " ":
                 move = self._open_menu_item()
             
             if move=="x":
                 break
             #print(self.coords,self._access_menu_item(self.coords))
+
+    def _chop_menu_entry(self,menu_entry):
+        if len(menu_entry)>self.W-2:
+            return menu_entry[:self.W-3]+"…"
+        return menu_entry
 
     def _generate_menu(self):
         #sizes=[self.N]
@@ -144,20 +185,32 @@ class VerticalMenu(Menu):
             top_of_menu.append(cur_vert_position)
             bottom_of_menu.append(cur_vert_position+len(items)-2)
             max_vert_size=max(max_vert_size,bottom_of_menu[-1])
-        print(top_of_menu)
-        print(bottom_of_menu)
-        print(self.coords)
+        #print(top_of_menu)
+        #print(bottom_of_menu)
+        #print(self.coords)
         filled=[]
+        len_cur_item=len(self._access_menu_item(self.coords)[0])
+        #print(len_cur_item)
+        long_menu_item=len_cur_item>self.W-2
+        
         for _ in range(max_vert_size):
             filled.append([])
         
+        #print(self.selected)
+
         for i in range(depth):
             for j in range(max_vert_size):
                 if j>=top_of_menu[i]-1 and j<bottom_of_menu[i]:
-                    filled[j].append(self._access_menu_item(self.coords[:i])[j+2-top_of_menu[i]][0])
+                    cur_entry=self._access_menu_item(self.coords[:i])[j+2-top_of_menu[i]]
+                    #if len(cur_entry[0])<self.W-2:
+                    
+                    filled[j].append(self._chop_menu_entry(cur_entry[0]).ljust(self.W-2)+int(len(cur_entry)>1)*" →"
+                                     +int(j+2-top_of_menu[i] in self.selected and i==depth-1)*" ✓")
+                    #else:
+                    #    filled[j].append(cur_entry[0][:self.W-3]+"…"+int(len(cur_entry)>1)*" →")
                 else:
                     filled[j].append(0)
-        print(filled,depth,max_vert_size)
+        #print(filled,depth,max_vert_size)
 
         hline=self.W*"─"
         blank=self.W*" "
@@ -174,6 +227,7 @@ class VerticalMenu(Menu):
 
         print_menu=""
         bottom_line=""
+        
         for j in range(max_vert_size):
             menu_content=""
             
@@ -182,7 +236,7 @@ class VerticalMenu(Menu):
                 nw = i!=0 and j!=0 and bool(filled[j-1][i-1])
                 n = j!=0 and bool(filled[j-1][i])
                 o = bool(filled[j][i])
-                print(j,i,w,nw,n,o)
+                #print(j,i,w,nw,n,o)
                 if (o and nw) or (w and n):
                     print_menu+=mcline
                 elif nw:
@@ -207,7 +261,15 @@ class VerticalMenu(Menu):
                     print_menu+=" "+blank
                 
                 if o:
-                    menu_content+=vline+filled[j][i].ljust(self.W)
+                    if self.coords[i]==j+2-top_of_menu[i]:
+                        if i==depth-1:
+                            len_cur_menu=max(self.W,len_cur_item+2)
+                            #menu_content+=vline+colored(filled[j][i].ljust(self.W),"blue")
+                            menu_content+=vline+colored((self._access_menu_item(self.coords)[0].ljust(len_cur_menu-2)+int(len(self._access_menu_item(self.coords))>1)*" →"+int(j+2-top_of_menu[i] in self.selected and i==depth-1)*" ✓").ljust(len_cur_menu),"blue")
+                        else:
+                            menu_content+=vline+colored(filled[j][i].ljust(self.W),"green")
+                    else:
+                        menu_content+=vline+filled[j][i].ljust(self.W)
                 elif w:
                     menu_content+=vline+blank
                 else:
@@ -226,12 +288,23 @@ class VerticalMenu(Menu):
 
             if o:
                 menu_content+=vline+"\n"
-                if n:
+                if self.coords[-1]==j+2-top_of_menu[-1] and long_menu_item:
+                    if n:
+                        print_menu+="┴"+(len_cur_menu-self.W-1)*"─"+tend+"\n"
+                    else: 
+                        print_menu+=(len_cur_menu-self.W)*"─"+tend+"\n"
+                elif self.coords[-1]==j+1-top_of_menu[-1] and long_menu_item:
+                    print_menu+="┬"+(len_cur_menu-self.W-1)*"─"+bend+"\n"
+                    
+                elif n:
                     print_menu+=mend+"\n"
                 else:
                     print_menu+=tend+"\n"
             elif n:
-                print_menu+=bend+"\n"
+                if self.coords[-1]==j+1-top_of_menu[-1] and long_menu_item:
+                    print_menu+=(len_cur_menu-self.W)*"─"+bend+"\n"
+                else:
+                    print_menu+=bend+"\n"
                 menu_content+=" "+"\n"
             else:
                 print_menu+=" "+"\n"
@@ -240,7 +313,10 @@ class VerticalMenu(Menu):
 
             print_menu+=menu_content
         if o:
-            bottom_line+=bend
+            if self.coords[-1]==max_vert_size+1-top_of_menu[-1] and long_menu_item:
+                bottom_line+=(len_cur_menu-self.W)*"─"+bend
+            else:
+                bottom_line+=bend
         else:
             bottom_line+=" "
         
@@ -286,20 +362,20 @@ menu_list=[
     "Menu",[
         "1",
             ["1.1"],
-            ["1.2",
+            ["1.2 lalalalalala",
                 ["1.2.1"],
                 ["1.2.2",
-                    ["1.2.2.1"]]],
+                    ["1.2.2.1 lalalala"]]],
             ["1.3"]
         ],
         ["2",
-            ["2.1"],
+            ["2.1 laaaawaaaaa"],
             ["2.2",
                 ["2.2.1",
                     ["2.2.1.1"]]]
         ],
         ["3"],
-        ["4"]
+        ["4lalalalalala"]
         ]
-c=VerticalMenu(menu_list, 25)
+c=VerticalMenu(menu_list, 10)
 c.navigate_menu()
