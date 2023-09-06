@@ -11,7 +11,7 @@ class Menu(ABC):
 
     def __init__(self, list_of_menu_items, W):
         
-        self.coords=[1,2,2,1]
+        self.coords=[1]
         self.selected=set()
         self.W=W
         self.N=len(list_of_menu_items)-1
@@ -20,9 +20,9 @@ class Menu(ABC):
         self.print_menu()
         
 
-    #@abstractmethod    
-    #def _generate_menu(self):
-    #    pass
+    @abstractmethod    
+    def _generate_menu(self):
+        pass
         
     def print_menu(self):
         #x("clear")
@@ -102,6 +102,14 @@ class Menu(ABC):
     
 
 class VerticalMenu(Menu):
+
+    _instance=None
+
+    def __new__(cls,*args,**kwargs):
+        
+        if not cls._instance:
+            cls._instance=super().__new__(cls)
+        return cls._instance
     
     def __init__(self, list_of_menu_items, W):
         super().__init__(list_of_menu_items, W)
@@ -112,28 +120,31 @@ class VerticalMenu(Menu):
         if self.W<6:
             raise ValueError("Menu items too small")
         
+    
+        
 
     def execute(self,*args):
         
-        def append_nested_list(nested_list,coords,to_append):
+        def __append_nested_list(nested_list,coords,to_append):
             if len(coords)==1:
                 nested_list[coords[0]].extend(to_append)
             else:
-                append_nested_list(nested_list[coords[0]],coords[1:],to_append)
+                __append_nested_list(nested_list[coords[0]],coords[1:],to_append)
             return nested_list
+        
 
         x("clear")
         for i in self.selected:
             x_coords=self.coords[:-1]
             x_coords.append(i)
             print(f"Elaborating on {self._access_menu_item(x_coords)[0]}.")
-            append_nested_list(self.list_of_menu_items,x_coords,[["1"],["2"],["3"]])
+            __append_nested_list(self.list_of_menu_items,x_coords,[["1"],["2"],["3"]])
             print(self.list_of_menu_items)
             getch.getch()
         self.selected.clear()
 
     
-    def _select_menu_item(self):
+    def __select_menu_item(self):
         
         if len(self._access_menu_item(self.coords))==1:
             if self.coords[-1] not in self.selected:
@@ -172,7 +183,7 @@ class VerticalMenu(Menu):
             if move.isdigit():
                 self._switch_top_menu_item(int(move))
             if move=="f":
-                self._select_menu_item()
+                self.__select_menu_item()
             if move == "d" or move == " ":
                 move = self._open_menu_item()
             
@@ -180,7 +191,7 @@ class VerticalMenu(Menu):
                 break
             #print(self.coords,self._access_menu_item(self.coords))
 
-    def _chop_menu_entry(self,menu_entry):
+    def __chop_menu_entry(self,menu_entry):
         if len(menu_entry)>self.W-2:
             return menu_entry[:self.W-3]+"…"
         return menu_entry
@@ -219,7 +230,7 @@ class VerticalMenu(Menu):
                     cur_entry=self._access_menu_item(self.coords[:i])[j+2-top_of_menu[i]]
                     #if len(cur_entry[0])<self.W-2:
                     
-                    filled[j].append(self._chop_menu_entry(cur_entry[0]).ljust(self.W-2)+int(len(cur_entry)>1)*" →"
+                    filled[j].append(self.__chop_menu_entry(cur_entry[0]).ljust(self.W-2)+int(len(cur_entry)>1)*" →"
                                      +int(j+2-top_of_menu[i] in self.selected and i==depth-1)*" ✓")
                     #else:
                     #    filled[j].append(cur_entry[0][:self.W-3]+"…"+int(len(cur_entry)>1)*" →")
