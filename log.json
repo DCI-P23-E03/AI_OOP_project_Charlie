@@ -1,418 +1,594 @@
 [
-    "1. #Cooking Class Business# $business consultant$ - |With your skill in cooking and experience in teaching Python, start a cooking class business targeting the youth. Utilize your barn as the venue for classes. Get creative and incorporate unique elements such as \"knife skills\" workshops, competitions, and cooking-related team activities. Generate revenue through class fees, selling cooking tools and merchandise, online classes, and special events.|\n\n2. #Farm-to-table restaurant# $culinary consultant$ - |As a skilled cook with access to a barn, transform your barn into a farm-to-table restaurant. Provide unique dining experiences by serving dishes cooked from locally sourced and organically grown ingredients. You can even grow some ingredients yourself. This kind of restaurant appeals to the youth who are increasingly interested in sustainability and food traceability.|\n\n3. #Football Academy# $sports consultant$ - |Utilize your passion for football to create a Football Academy for the youth. Use the barn as an office or backup indoor training venue. With a low risk-taking ability, you can start small by offering group classes and camps. As your client base expands, consider additional services like personalized coaching and hosting football tournaments.|\n\n",
+    "1. #Teacher's Kitchen Webinars# $A Marketing and Culinary Expert$ - |Using your established experience in python teaching and love for cooking, you can split your time teaching cooking classes and Python online in an interactive format. Cater your classes to younger women who are interested in both coding and cooking. Showcase the fun factor in coding when combined with cooking techniques.|\n\n2. #Coding Football Emulator Park# $A Tech and Sports Business Specialist$ - |Convert your barn into a code-driven football emulator park. This offline business can target the young women who might be intrigued by the interesting blend of sports and tech. You can use your knowledge of Python and experience in creating football emulators to create a unique business that serves both entertainment and educational purposes.|\n\n3. #Tech-equipped Kitchen Store# $A Retail and Tech Entrepreneur$ - |Your equipped kitchen can be transformed into a tech-based kitchen store that demonstrates and sells gadgets which are helpful in cooking. This approach aids in introducing the market of young women to the world of assisted cooking with tech tools while blending in your culinary skills. The store can also host coding lessons on developing kitchen-related apps or coding tutorials for home automation.|",
     {
         "num": "1",
-        "title": "Cooking Class Business",
-        "expert": "business consultant",
-        "content": "With your skill in cooking and experience in teaching Python, start a cooking class business targeting the youth. Utilize your barn as the venue for classes. Get creative and incorporate unique elements such as \"knife skills\" workshops, competitions, and cooking-related team activities. Generate revenue through class fees, selling cooking tools and merchandise, online classes, and special events."
+        "title": "Teacher's Kitchen Webinars",
+        "expert": "A Marketing and Culinary Expert",
+        "content": "Using your established experience in python teaching and love for cooking, you can split your time teaching cooking classes and Python online in an interactive format. Cater your classes to younger women who are interested in both coding and cooking. Showcase the fun factor in coding when combined with cooking techniques."
     },
     {
         "num": "2",
-        "title": "Farm-to-table restaurant",
-        "expert": "culinary consultant",
-        "content": "As a skilled cook with access to a barn, transform your barn into a farm-to-table restaurant. Provide unique dining experiences by serving dishes cooked from locally sourced and organically grown ingredients. You can even grow some ingredients yourself. This kind of restaurant appeals to the youth who are increasingly interested in sustainability and food traceability.",
-        "prompt": "You are the best culinary consultant in the whole world, with 25 years experience. I am your client and i want to start Farm-to-table restaurant in Germany. Describe in detail and write what is needed to start. No need to mention the current year in the answer. Write strictly in the format: number. #name of the business action# $expert to address for detailed information$ - |description of the business action as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+        "title": "Coding Football Emulator Park",
+        "expert": "A Tech and Sports Business Specialist",
+        "content": "Convert your barn into a code-driven football emulator park. This offline business can target the young women who might be intrigued by the interesting blend of sports and tech. You can use your knowledge of Python and experience in creating football emulators to create a unique business that serves both entertainment and educational purposes.",
+        "prompt": "You are the best A Tech and Sports Business Specialist in the whole world, with 25 years experience. I am your client and i want to start Coding Football Emulator Park in Germany. Describe in detail and write what is needed to start. No need to mention the current year in the answer. Write strictly in the format: number. #name of the business action# $expert to address for detailed information$ - |description of the business action as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
         "elaborate": [
-            "1. #Market Research# $business consultant$ - |Conduct detailed market research to understand the local food scene, demographics, competition, and potential customers' preferences. Identify gaps in the market, popular local ingredients, and farm-to-table trends specific to Germany.|\n\n2. #Business Plan# $business consultant$ - |Create a comprehensive business plan with clear objectives, marketing strategies, budget calculations, and timelines. Include details about the restaurant's theme, style, menu, operations, pricing, sourcing of supplies, marketing, customer service, and growth strategies.|\n\n3. #Property Conversion# $property consultant$ - |Hire an expert to ensure your barn meets the necessary commercial property standards. Engage an architect and a contractor to convert the barn into a restaurant complying with health and safety standards.|\n\n4. #Sourcing Local Producers# $agricultural consultant$ - |Identify and network with local farmers, growers, and suppliers. Ensure they practice sustainable farming and provide high-quality, fresh produce. Create mutually beneficial partnerships that support local agriculture and supply your restaurant with fresh ingredients.|\n\n5. #Develop a Menu# $culinary consultant$ - |Design a menu that showcases local fresh ingredients and German culinary traditions. Update the menu regularly to reflect seasonal produce availability and keep customer interest.|\n\n6. #Staff Hiring and Training# $HR consultant$ - |Hire staff with relevant restaurant experience. Train them on your restaurant's unique concept, standards of service, menu, and the importance of fresh, locally sourced ingredients.|\n\n7. #Restaurant Layout and Design# $interior designer$ - |Engage a designer to create a comfortable and unique restaurant layout and decor that fits the farm-to-table theme and your brand image.|\n\n8. #Launch Marketing Plan# $marketing consultant$ - |Develop a strong marketing strategy to build excitement around your restaurant's opening. Utilize social media, local press, food bloggers, and influencers to promote your restaurant. Plan a soft launch or friends-and-family event before the grand opening.| \n\n9. #Licenses and Permits# $legal consultant$ - |Get all necessary licenses and permits, such as food service license, liquor license, health department permits, business registration, and local zoning permits. Ensure you meet all regulatory requirements in Germany.|",
+            "1. #Business Plan Creation# $Business Strategy Consultant$ - |Begin by developing a comprehensive business plan. Your plan should include the types of services offered, target audience, pricing structure, competitive analysis, and marketing strategies. It should also incorporate the information about staffing, equipment required, and legal permits necessary for operating a coding football emulator park.|\n\n2. #Location Scouting# $Real Estate Advisor$ - |Identify a suitable location for your Coding Football Emulator Park. The location should be easily accessible and large enough to incorporate all the facilities as per your business plan. Carry out an assessment of the barn you have access to, to determine if it can be effectively converted into a football emulator park.|\n\n3. #Legal Permit and Licensing Acquisition# $Legal Attorney familiar with German laws$ - |Explore and secure the necessary legal permits and licenses for establishing and running a coding football emulator park in Germany. Take into account any specific requirements related to safety regulations, insurance, public entertainment, and other technical aspects.|\n\n4. #Equipment Purchase and Setup# $Tech and Hardware Provider$ - |Decide on the essential equipment required for setting up the football emulator. This includes the hardware and software components of the football emulator and relevant coding tools. Then purchase and install them as per specifications.|\n\n5. #Staff Hiring and Training# $Human Resources Consultant$ - |Hire skilled personnel for various roles from technicians who can handle and maintain the football emulator to staff members for customer service. Providing necessary training to the staff on how to handle the equipment, basic coding knowledge, and customer relations is equally important.|\n\n6. #Website and Social Media Setup# $Digital Marketing Specialist$ - |Design and launch a professional website and social media pages to promote your Coding Football Emulator Park. Ensure the website provides all necessary information about your park and enables online bookings. Track and engage with your audience on social media platforms regularly to build a strong online presence.|\n\n7. #Launch and Marketing# $Event Planner and Marketing Specialist$ - |Organize a grand launch event to promote your Coding Football Emulator Park. Strategize and execute an effective marketing campaign, both online and offline, targeting your specific audience - young women. Consistently monitor and adjust your marketing strategies based on responses and changing dynamics.|",
             {
                 "num": "1",
-                "title": "Market Research",
-                "expert": "business consultant",
-                "content": "Conduct detailed market research to understand the local food scene, demographics, competition, and potential customers' preferences. Identify gaps in the market, popular local ingredients, and farm-to-table trends specific to Germany.",
-                "prompt": "Your current choice of business action is Market Research. Imagine it's September 2021. you're the best business consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nConduct detailed market research to understand the local food scene, demographics, competition, and potential customers' preferences. Identify gaps in the market, popular local ingredients, and farm-to-table trends specific to Germany. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
-                "elaborate": [
-                    "1. #Local Food Scene Analysis# $food and beverage consultant$ - |Gather data on the current food and beverage environment, noting the types of restaurants, popularity of cuisines, successful restaurant models, and overall level of customer interest in food-related experiences.|\n\n2. #Demographics Research# $demographics expert$ - |Analyze the local population in terms of age, income, social habits and eating preferences. Understand the proportion of the population likely to be interested in a farm-to-table restaurant.|\n\n3. #Competitor Analysis# $business analyst$ - |Identify key competitors in the farm-to-table restaurant space in Germany, analyzing their menu, pricing, service quality, sources of ingredients and customer feedback to understand their strengths and weaknesses.|\n\n4. #Customer Preferences Study# $market research expert$ - |Conduct surveys, focus groups and interviews to understand what potential customers would like to see in a farm-to-table restaurant, such as preferred ingredients, menu items, price range, and overall dining experience.|\n\n5. #Market Gap Identification# $business analyst$  - |Identify potential gaps in the market where you could introduce unique features in your farm-to-table restaurant that aren't currently being offered by other restaurants.|\n\n6. #Popular Local Ingredients# $culinary expert$ - |List popular and widely accepted local ingredients that appeal to the average German food lover. These ingredients could make up the core of your restaurant's menu, ensuring wide acceptance of your dishes.|\n\n7. #Farm-to-table Trend Analysis# $food and beverage consultant$ - |Study the farm-to-table trend in Germany. Understand the growing popularity of this trend, customer perception of the concept, successful farm-to-table restaurants, and future growth prospects.|",
-                    {
-                        "num": "1",
-                        "title": "Local Food Scene Analysis",
-                        "expert": "food and beverage consultant",
-                        "content": "Gather data on the current food and beverage environment, noting the types of restaurants, popularity of cuisines, successful restaurant models, and overall level of customer interest in food-related experiences."
-                    },
-                    {
-                        "num": "2",
-                        "title": "Demographics Research",
-                        "expert": "demographics expert",
-                        "content": "Analyze the local population in terms of age, income, social habits and eating preferences. Understand the proportion of the population likely to be interested in a farm-to-table restaurant."
-                    },
-                    {
-                        "num": "3",
-                        "title": "Competitor Analysis",
-                        "expert": "business analyst",
-                        "content": "Identify key competitors in the farm-to-table restaurant space in Germany, analyzing their menu, pricing, service quality, sources of ingredients and customer feedback to understand their strengths and weaknesses."
-                    },
-                    {
-                        "num": "4",
-                        "title": "Customer Preferences Study",
-                        "expert": "market research expert",
-                        "content": "Conduct surveys, focus groups and interviews to understand what potential customers would like to see in a farm-to-table restaurant, such as preferred ingredients, menu items, price range, and overall dining experience."
-                    },
-                    {
-                        "num": "5",
-                        "title": "Market Gap Identification",
-                        "expert": "business analyst",
-                        "content": "Identify potential gaps in the market where you could introduce unique features in your farm-to-table restaurant that aren't currently being offered by other restaurants."
-                    },
-                    {
-                        "num": "6",
-                        "title": "Popular Local Ingredients",
-                        "expert": "culinary expert",
-                        "content": "List popular and widely accepted local ingredients that appeal to the average German food lover. These ingredients could make up the core of your restaurant's menu, ensuring wide acceptance of your dishes."
-                    },
-                    {
-                        "num": "7",
-                        "title": "Farm-to-table Trend Analysis",
-                        "expert": "food and beverage consultant",
-                        "content": "Study the farm-to-table trend in Germany. Understand the growing popularity of this trend, customer perception of the concept, successful farm-to-table restaurants, and future growth prospects."
-                    }
-                ]
+                "title": "Business Plan Creation",
+                "expert": "Business Strategy Consultant",
+                "content": "Begin by developing a comprehensive business plan. Your plan should include the types of services offered, target audience, pricing structure, competitive analysis, and marketing strategies. It should also incorporate the information about staffing, equipment required, and legal permits necessary for operating a coding football emulator park."
             },
             {
                 "num": "2",
-                "title": "Business Plan",
-                "expert": "business consultant",
-                "content": "Create a comprehensive business plan with clear objectives, marketing strategies, budget calculations, and timelines. Include details about the restaurant's theme, style, menu, operations, pricing, sourcing of supplies, marketing, customer service, and growth strategies."
+                "title": "Location Scouting",
+                "expert": "Real Estate Advisor",
+                "content": "Identify a suitable location for your Coding Football Emulator Park. The location should be easily accessible and large enough to incorporate all the facilities as per your business plan. Carry out an assessment of the barn you have access to, to determine if it can be effectively converted into a football emulator park."
             },
             {
                 "num": "3",
-                "title": "Property Conversion",
-                "expert": "property consultant",
-                "content": "Hire an expert to ensure your barn meets the necessary commercial property standards. Engage an architect and a contractor to convert the barn into a restaurant complying with health and safety standards.",
-                "prompt": "Your current choice of business action is Property Conversion. Imagine it's September 2021. you're the best property consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nHire an expert to ensure your barn meets the necessary commercial property standards. Engage an architect and a contractor to convert the barn into a restaurant complying with health and safety standards. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
-                "elaborate": [
-                    "1. #Property Assessment# $structural engineer$ - |Engage a structural engineer to evaluate the barn's current condition. Ensure the structure is sound and can facilitate the necessary changes for a restaurant.|\n\n2. #Code Compliance# $legal consultant$ - |Consult a local codes administration officer to ensure all the planned modifications comply with the building codes and zoning laws specific to your area.|\n\n3. #Hire an Architect and Contractor# $construction consultant$ - |Hire an experienced architect and contractor who have experience in converting barns into commercial venues. Ensure they have good knowledge of the local codes and guidelines.|\n\n4. #Design Layout# $architect$ - |Work closely with the architect to design the layout spreading the dining area, kitchen, restrooms, and storage optimally and aesthetically. The layout should facilitate smooth flow of staff and customers, and also adhere to safety codes.|\n\n5. #Renovation Plan# $contractor$ - |With your contractor, create a detailed renovation plan. This should include timelines, an in-depth budget, and a plan for sourcing necessary materials and labor.|\n\n6. #Plumbing, Heating, and Ventilation# $HVAC/plumbing consultant$ - |Ensure your barn is equipped with effective plumbing, heating, and ventilation systems. Enlist the help of professionals to install or upgrade these systems as required for a restaurant.|\n\n7. #Fire Safety Measures# $fire safety consultant$ - |Implement necessary fire safety measures as per laws. This will include fire exits, extinguishers, alarms, and sprinkler systems. Train your staff on fire safety protocols.|\n\n8. #Electrical Work# $electrical consultant$ - |Get all the necessary electrical work done, including wiring for light fixtures, kitchen equipment, and emergency systems.|\n\n9. #Final Property Inspection# $property inspector$ - |Once all work is completed, get a final inspection done to ensure all changes comply with local codes and regulations. Make any adjustments as recommended by the inspector.|",
-                    {
-                        "num": "1",
-                        "title": "Property Assessment",
-                        "expert": "structural engineer",
-                        "content": "Engage a structural engineer to evaluate the barn's current condition. Ensure the structure is sound and can facilitate the necessary changes for a restaurant."
-                    },
-                    {
-                        "num": "2",
-                        "title": "Code Compliance",
-                        "expert": "legal consultant",
-                        "content": "Consult a local codes administration officer to ensure all the planned modifications comply with the building codes and zoning laws specific to your area."
-                    },
-                    {
-                        "num": "3",
-                        "title": "Hire an Architect and Contractor",
-                        "expert": "construction consultant",
-                        "content": "Hire an experienced architect and contractor who have experience in converting barns into commercial venues. Ensure they have good knowledge of the local codes and guidelines."
-                    },
-                    {
-                        "num": "4",
-                        "title": "Design Layout",
-                        "expert": "architect",
-                        "content": "Work closely with the architect to design the layout spreading the dining area, kitchen, restrooms, and storage optimally and aesthetically. The layout should facilitate smooth flow of staff and customers, and also adhere to safety codes."
-                    },
-                    {
-                        "num": "5",
-                        "title": "Renovation Plan",
-                        "expert": "contractor",
-                        "content": "With your contractor, create a detailed renovation plan. This should include timelines, an in-depth budget, and a plan for sourcing necessary materials and labor."
-                    },
-                    {
-                        "num": "6",
-                        "title": "Plumbing, Heating, and Ventilation",
-                        "expert": "HVAC/plumbing consultant",
-                        "content": "Ensure your barn is equipped with effective plumbing, heating, and ventilation systems. Enlist the help of professionals to install or upgrade these systems as required for a restaurant."
-                    },
-                    {
-                        "num": "7",
-                        "title": "Fire Safety Measures",
-                        "expert": "fire safety consultant",
-                        "content": "Implement necessary fire safety measures as per laws. This will include fire exits, extinguishers, alarms, and sprinkler systems. Train your staff on fire safety protocols."
-                    },
-                    {
-                        "num": "8",
-                        "title": "Electrical Work",
-                        "expert": "electrical consultant",
-                        "content": "Get all the necessary electrical work done, including wiring for light fixtures, kitchen equipment, and emergency systems."
-                    },
-                    {
-                        "num": "9",
-                        "title": "Final Property Inspection",
-                        "expert": "property inspector",
-                        "content": "Once all work is completed, get a final inspection done to ensure all changes comply with local codes and regulations. Make any adjustments as recommended by the inspector."
-                    }
-                ]
+                "title": "Legal Permit and Licensing Acquisition",
+                "expert": "Legal Attorney familiar with German laws",
+                "content": "Explore and secure the necessary legal permits and licenses for establishing and running a coding football emulator park in Germany. Take into account any specific requirements related to safety regulations, insurance, public entertainment, and other technical aspects."
             },
             {
                 "num": "4",
-                "title": "Sourcing Local Producers",
-                "expert": "agricultural consultant",
-                "content": "Identify and network with local farmers, growers, and suppliers. Ensure they practice sustainable farming and provide high-quality, fresh produce. Create mutually beneficial partnerships that support local agriculture and supply your restaurant with fresh ingredients."
-            },
-            {
-                "num": "5",
-                "title": "Develop a Menu",
-                "expert": "culinary consultant",
-                "content": "Design a menu that showcases local fresh ingredients and German culinary traditions. Update the menu regularly to reflect seasonal produce availability and keep customer interest."
-            },
-            {
-                "num": "6",
-                "title": "Staff Hiring and Training",
-                "expert": "HR consultant",
-                "content": "Hire staff with relevant restaurant experience. Train them on your restaurant's unique concept, standards of service, menu, and the importance of fresh, locally sourced ingredients."
-            },
-            {
-                "num": "7",
-                "title": "Restaurant Layout and Design",
-                "expert": "interior designer",
-                "content": "Engage a designer to create a comfortable and unique restaurant layout and decor that fits the farm-to-table theme and your brand image."
-            },
-            {
-                "num": "8",
-                "title": "Launch Marketing Plan",
-                "expert": "marketing consultant",
-                "content": "Develop a strong marketing strategy to build excitement around your restaurant's opening. Utilize social media, local press, food bloggers, and influencers to promote your restaurant. Plan a soft launch or friends-and-family event before the grand opening."
-            },
-            {
-                "num": "9",
-                "title": "Licenses and Permits",
-                "expert": "legal consultant",
-                "content": "Get all necessary licenses and permits, such as food service license, liquor license, health department permits, business registration, and local zoning permits. Ensure you meet all regulatory requirements in Germany.",
-                "prompt": "Your current choice of business action is Licenses and Permits. Imagine it's September 2021. you're the best legal consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nGet all necessary licenses and permits, such as food service license, liquor license, health department permits, business registration, and local zoning permits. Ensure you meet all regulatory requirements in Germany. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                "title": "Equipment Purchase and Setup",
+                "expert": "Tech and Hardware Provider",
+                "content": "Decide on the essential equipment required for setting up the football emulator. This includes the hardware and software components of the football emulator and relevant coding tools. Then purchase and install them as per specifications.",
+                "prompt": "Your current choice of business action is Equipment Purchase and Setup. Imagine it's September 2021. you're the best Tech and Hardware Provider in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nDecide on the essential equipment required for setting up the football emulator. This includes the hardware and software components of the football emulator and relevant coding tools. Then purchase and install them as per specifications. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
                 "elaborate": [
-                    "1. #Business Registration# $business registration service$ - |Register your restaurant business with the local Chamber of Commerce or Handelsregister in Germany. Choose the business entity type, such as limited liability or sole proprietorship.|\n\n2. #Obtain Food Service License# $health department$ - |Apply for the food service license from the local health department. Adhere to all requirements including food safety regulations for food preparation, storage, handling, and display.|\n\n3. #Health and Safety Inspections# $health inspection agency$ - |Arrange for periodic health and safety inspections of your restaurant, including food hygiene, to comply with the Health Protection and Food Laws in Germany.|\n\n4. #Liquor License Application# $liquor control board$ - |If you plan to serve alcohol, apply for a liquor license from the local liquor control board. This usually mandates the owner and staff to undergo training on responsible alcohol service.|\n\n5. #Obtain Zoning Permit# $local zoning department$ - |Get a zoning permit from local town or city officials. This certifies that your restaurant's location is in an area designated for your type of business.|\n\n6. #Fire Safety Regulations# $fire department$ - |Comply with fire safety regulations mandated by the local fire department. This includes installation of fire extinguishers, emergency exits, fire suppression system in kitchen, etc.|\n\n7. #Music License# $performing rights organization$ - |If you'll be playing music in your restaurant, acquire the necessary licenses from music copyright organizations, like GEMA in Germany, to legally play copyrighted music.|\n\n8. #Tax Registration# $tax consultant$ - |Register your restaurant for Value Added Tax (VAT) or Umsatzsteuer with the German tax office or Finanzamt. |\n\n9. #Restaurant Liability Insurance# $insurance agency$ - |Set up restaurant liability insurance to protect your business from various liability claims such as food-borne illnesses, injuries, or damages related to the consumption of alcohol.|",
+                    "1. #Hardware Requirements Analysis# $Tech Equipment Specialist$ - |Evaluate and determine the hardware tools you will need for setting up the football emulator, including as computer servers, motion capture systems, projection systems, and other necessary peripherals for the optimal function of your emulator.|\n\n2. #Software Requirements Analysis# $Software Solutions Provider$ - |Identify and outline the software components needed for running the football emulator efficiently. This may include the emulator software, programming platforms, debugging tools, and other related applications.|\n\n3. #Procurement Plan Development# $Supply Chain Manager$ - |Develop a detailed procurement plan once the hardware and software needs have been identified. This plan should include where to source the equipment from, timeframe for procurement, and the costs involved.|\n\n4. #Equipment Purchase# $Procurement Specialist$ - |Procure all the necessary hardware and software as per the plan. Try to get the best deals without compromising on quality. Compare different vendors and negotiate for the best prices and ensure timely delivery.|\n\n5. #Installation Process Planning# $Tech and Hardware Consultant$ - |Plan the installation process for your football emulator. This includes preparing the location, arranging for necessary utilities, and finalising the schedule for software and hardware installation.|\n\n6. #Execution of Installation# $Onsite Technician$ - |Execute the installation process as per the plan. Have a technician set up the hardware and install the software. Test the systems to ensure they're working together without errors.|\n\n7. #System Testing and Calibration# $Systems Engineer$ - |Conduct thorough testing of the installed systems and calibration of the football emulator to ensure optimal performance. Identify any issues and resolve them promptly.|\n\n8. #User Training# $Tech Training Specialist$ - |Train your staff on how to use, troubleshoot, and maintain the football emulator. Ensure they're comfortable using the software and can help customers who come to experience the football emulator.|\n\n9. #Post-installation Support Plan# $Tech Support Provider$ - |Prepare a plan for technical support after the installation. This should include routine maintenance checks, troubleshooting, software updates, and hardware replacement if necessary.|",
                     {
                         "num": "1",
-                        "title": "Business Registration",
-                        "expert": "business registration service",
-                        "content": "Register your restaurant business with the local Chamber of Commerce or Handelsregister in Germany. Choose the business entity type, such as limited liability or sole proprietorship."
+                        "title": "Hardware Requirements Analysis",
+                        "expert": "Tech Equipment Specialist",
+                        "content": "Evaluate and determine the hardware tools you will need for setting up the football emulator, including as computer servers, motion capture systems, projection systems, and other necessary peripherals for the optimal function of your emulator."
                     },
                     {
                         "num": "2",
-                        "title": "Obtain Food Service License",
-                        "expert": "health department",
-                        "content": "Apply for the food service license from the local health department. Adhere to all requirements including food safety regulations for food preparation, storage, handling, and display."
+                        "title": "Software Requirements Analysis",
+                        "expert": "Software Solutions Provider",
+                        "content": "Identify and outline the software components needed for running the football emulator efficiently. This may include the emulator software, programming platforms, debugging tools, and other related applications."
                     },
                     {
                         "num": "3",
-                        "title": "Health and Safety Inspections",
-                        "expert": "health inspection agency",
-                        "content": "Arrange for periodic health and safety inspections of your restaurant, including food hygiene, to comply with the Health Protection and Food Laws in Germany."
+                        "title": "Procurement Plan Development",
+                        "expert": "Supply Chain Manager",
+                        "content": "Develop a detailed procurement plan once the hardware and software needs have been identified. This plan should include where to source the equipment from, timeframe for procurement, and the costs involved."
                     },
                     {
                         "num": "4",
-                        "title": "Liquor License Application",
-                        "expert": "liquor control board",
-                        "content": "If you plan to serve alcohol, apply for a liquor license from the local liquor control board. This usually mandates the owner and staff to undergo training on responsible alcohol service."
+                        "title": "Equipment Purchase",
+                        "expert": "Procurement Specialist",
+                        "content": "Procure all the necessary hardware and software as per the plan. Try to get the best deals without compromising on quality. Compare different vendors and negotiate for the best prices and ensure timely delivery."
                     },
                     {
                         "num": "5",
-                        "title": "Obtain Zoning Permit",
-                        "expert": "local zoning department",
-                        "content": "Get a zoning permit from local town or city officials. This certifies that your restaurant's location is in an area designated for your type of business."
+                        "title": "Installation Process Planning",
+                        "expert": "Tech and Hardware Consultant",
+                        "content": "Plan the installation process for your football emulator. This includes preparing the location, arranging for necessary utilities, and finalising the schedule for software and hardware installation."
                     },
                     {
                         "num": "6",
-                        "title": "Fire Safety Regulations",
-                        "expert": "fire department",
-                        "content": "Comply with fire safety regulations mandated by the local fire department. This includes installation of fire extinguishers, emergency exits, fire suppression system in kitchen, etc."
+                        "title": "Execution of Installation",
+                        "expert": "Onsite Technician",
+                        "content": "Execute the installation process as per the plan. Have a technician set up the hardware and install the software. Test the systems to ensure they're working together without errors."
                     },
                     {
                         "num": "7",
-                        "title": "Music License",
-                        "expert": "performing rights organization",
-                        "content": "If you'll be playing music in your restaurant, acquire the necessary licenses from music copyright organizations, like GEMA in Germany, to legally play copyrighted music."
+                        "title": "System Testing and Calibration",
+                        "expert": "Systems Engineer",
+                        "content": "Conduct thorough testing of the installed systems and calibration of the football emulator to ensure optimal performance. Identify any issues and resolve them promptly."
                     },
                     {
                         "num": "8",
-                        "title": "Tax Registration",
-                        "expert": "tax consultant",
-                        "content": "Register your restaurant for Value Added Tax (VAT) or Umsatzsteuer with the German tax office or Finanzamt."
+                        "title": "User Training",
+                        "expert": "Tech Training Specialist",
+                        "content": "Train your staff on how to use, troubleshoot, and maintain the football emulator. Ensure they're comfortable using the software and can help customers who come to experience the football emulator."
                     },
                     {
                         "num": "9",
-                        "title": "Restaurant Liability Insurance",
-                        "expert": "insurance agency",
-                        "content": "Set up restaurant liability insurance to protect your business from various liability claims such as food-borne illnesses, injuries, or damages related to the consumption of alcohol."
+                        "title": "Post-installation Support Plan",
+                        "expert": "Tech Support Provider",
+                        "content": "Prepare a plan for technical support after the installation. This should include routine maintenance checks, troubleshooting, software updates, and hardware replacement if necessary."
                     }
                 ]
+            },
+            {
+                "num": "5",
+                "title": "Staff Hiring and Training",
+                "expert": "Human Resources Consultant",
+                "content": "Hire skilled personnel for various roles from technicians who can handle and maintain the football emulator to staff members for customer service. Providing necessary training to the staff on how to handle the equipment, basic coding knowledge, and customer relations is equally important.",
+                "prompt": "Your current choice of business action is Staff Hiring and Training. Imagine it's September 2021. you're the best Human Resources Consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nHire skilled personnel for various roles from technicians who can handle and maintain the football emulator to staff members for customer service. Providing necessary training to the staff on how to handle the equipment, basic coding knowledge, and customer relations is equally important. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                "elaborate": [
+                    "1. #Job Role Definitions# $HR Specialist in Job Analysis$ - |Define clear job responsibilities for each role required in your business - from technicians for the football emulator to customer service professionals. This will provide distinct boundaries and understanding of what is expected from each employee.|\n\n2. #Job Descriptions and Advertisements# $HR Recruitment Consultant$ - |Based on defined job roles, create compelling job descriptions that accurately represent each job role. Use these descriptions subsequently to advertise your job vacancies on relevant job platforms to attract right candidates.|\n\n3. #Skills and Experience Filters# $HR Advisor$ - |While screening applications, prioritize candidates with relevant experience and skills. For technical roles, prioritize those with experience in coding and maintaining similar systems. For customer service roles, look for candidates with excellent communication skills and previous customer-facing experience.|\n\n4. #Interview and Candidate Assessment# $Interviewing Specialist$ - |Prepare a set of interview questions and assessment tasks tailored for each role. This will help you evaluate candidates\u2019 suitability for the role and your business.|\n\n5. #Job Offers and Contract Finalization# $Employment Attorney$ - |After shortlisting and finalizing the candidates, extend job offers. Along with that, finalize employment contracts in consultation with an employment attorney to ensure you comply with all labour laws and regulations.|\n\n6. #Staff Onboarding Process# $Senior HR Consultant$ - |Once contracts are signed, design a comprehensive onboarding process. This process should effectively familiarize the new hires with their roles, team and your business.|\n\n7. #Training Program Development# $Training and Development Consultant$ - |Create a training program that will equip staff with necessary knowledge about the football emulator, safe equipment handling, basic coding, and customer service. This training should help them carry out their day-to-day tasks efficiently.|\n\n8. #Continuous Evaluation and Skill Development# $Performance Management Consultant$ - |Develop a performance evaluation process to regularly assess employees\u2019 work. Along with that, continually invest in employee's skill development through ongoing training programs. This will ensure employees\u2019 growth and the business' productivity.|",
+                    {
+                        "num": "1",
+                        "title": "Job Role Definitions",
+                        "expert": "HR Specialist in Job Analysis",
+                        "content": "Define clear job responsibilities for each role required in your business - from technicians for the football emulator to customer service professionals. This will provide distinct boundaries and understanding of what is expected from each employee."
+                    },
+                    {
+                        "num": "2",
+                        "title": "Job Descriptions and Advertisements",
+                        "expert": "HR Recruitment Consultant",
+                        "content": "Based on defined job roles, create compelling job descriptions that accurately represent each job role. Use these descriptions subsequently to advertise your job vacancies on relevant job platforms to attract right candidates."
+                    },
+                    {
+                        "num": "3",
+                        "title": "Skills and Experience Filters",
+                        "expert": "HR Advisor",
+                        "content": "While screening applications, prioritize candidates with relevant experience and skills. For technical roles, prioritize those with experience in coding and maintaining similar systems. For customer service roles, look for candidates with excellent communication skills and previous customer-facing experience."
+                    },
+                    {
+                        "num": "4",
+                        "title": "Interview and Candidate Assessment",
+                        "expert": "Interviewing Specialist",
+                        "content": "Prepare a set of interview questions and assessment tasks tailored for each role. This will help you evaluate candidates\u2019 suitability for the role and your business."
+                    },
+                    {
+                        "num": "5",
+                        "title": "Job Offers and Contract Finalization",
+                        "expert": "Employment Attorney",
+                        "content": "After shortlisting and finalizing the candidates, extend job offers. Along with that, finalize employment contracts in consultation with an employment attorney to ensure you comply with all labour laws and regulations."
+                    },
+                    {
+                        "num": "6",
+                        "title": "Staff Onboarding Process",
+                        "expert": "Senior HR Consultant",
+                        "content": "Once contracts are signed, design a comprehensive onboarding process. This process should effectively familiarize the new hires with their roles, team and your business."
+                    },
+                    {
+                        "num": "7",
+                        "title": "Training Program Development",
+                        "expert": "Training and Development Consultant",
+                        "content": "Create a training program that will equip staff with necessary knowledge about the football emulator, safe equipment handling, basic coding, and customer service. This training should help them carry out their day-to-day tasks efficiently."
+                    },
+                    {
+                        "num": "8",
+                        "title": "Continuous Evaluation and Skill Development",
+                        "expert": "Performance Management Consultant",
+                        "content": "Develop a performance evaluation process to regularly assess employees\u2019 work. Along with that, continually invest in employee's skill development through ongoing training programs. This will ensure employees\u2019 growth and the business' productivity."
+                    }
+                ]
+            },
+            {
+                "num": "6",
+                "title": "Website and Social Media Setup",
+                "expert": "Digital Marketing Specialist",
+                "content": "Design and launch a professional website and social media pages to promote your Coding Football Emulator Park. Ensure the website provides all necessary information about your park and enables online bookings. Track and engage with your audience on social media platforms regularly to build a strong online presence.",
+                "prompt": "Your current choice of business action is Website and Social Media Setup. Imagine it's September 2021. you're the best Digital Marketing Specialist in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nDesign and launch a professional website and social media pages to promote your Coding Football Emulator Park. Ensure the website provides all necessary information about your park and enables online bookings. Track and engage with your audience on social media platforms regularly to build a strong online presence. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                "elaborate": [
+                    "1. #Website Design and Development# $Web Development Specialist$ - |Engage a web development specialist to design and create a website that is user-friendly, attractive, and optimized for mobile devices. The website should be designed to provide important information about the park, codified football, upcoming events, and booking details.|\n\n2. #Booking System Integration# $Booking System Expert$ - |Integrate an easy-to-use online booking system on the website. Make sure the system allows users to book their visits in advance, choose different packages if available, and make payments securely.|\n\n3. #SEO Optimization# $SEO Expert$ - |Optimize your website for search engines. This includes creating SEO-friendly content and using meta tags, keywords, and image optimization. This action will improve the website's visibility on search platforms and attract more visitors.|\n\n4. #Social Media Channels Setup# $Social Media Manager$ - |Create business profiles on key social media platforms like Facebook, Instagram, Twitter, and LinkedIn. Having a solid social media presence will engage your target audience and spread awareness about your business.|\n\n5. #Content Strategy Development# $Content Strategy Expert$ - |Develop a content strategy for the website and social media pages. Regularly post engaging and relevant material to attract and retain the target audience. Use a mix of educational, promotional, and interactive content types.|\n\n6. #Audience Engagement# $Community Manager$ - |Keep the audience engaged through regular interaction on social media platforms. Respond promptly and politely to comments and messages. Regularly conduct engaging activities like contests or quizzes to keep the community engaged and grow the follower base.|\n\n7. #Performance Tracking# $Data Analyst$ - |Use analytical tools to monitor the website and social media performance. Track metrics such as visitor demographics, time spent on the website, popular pages, conversion rates, social engagement, etc. Use this data for future strategy development.|",
+                    {
+                        "num": "1",
+                        "title": "Website Design and Development",
+                        "expert": "Web Development Specialist",
+                        "content": "Engage a web development specialist to design and create a website that is user-friendly, attractive, and optimized for mobile devices. The website should be designed to provide important information about the park, codified football, upcoming events, and booking details."
+                    },
+                    {
+                        "num": "2",
+                        "title": "Booking System Integration",
+                        "expert": "Booking System Expert",
+                        "content": "Integrate an easy-to-use online booking system on the website. Make sure the system allows users to book their visits in advance, choose different packages if available, and make payments securely."
+                    },
+                    {
+                        "num": "3",
+                        "title": "SEO Optimization",
+                        "expert": "SEO Expert",
+                        "content": "Optimize your website for search engines. This includes creating SEO-friendly content and using meta tags, keywords, and image optimization. This action will improve the website's visibility on search platforms and attract more visitors."
+                    },
+                    {
+                        "num": "4",
+                        "title": "Social Media Channels Setup",
+                        "expert": "Social Media Manager",
+                        "content": "Create business profiles on key social media platforms like Facebook, Instagram, Twitter, and LinkedIn. Having a solid social media presence will engage your target audience and spread awareness about your business."
+                    },
+                    {
+                        "num": "5",
+                        "title": "Content Strategy Development",
+                        "expert": "Content Strategy Expert",
+                        "content": "Develop a content strategy for the website and social media pages. Regularly post engaging and relevant material to attract and retain the target audience. Use a mix of educational, promotional, and interactive content types."
+                    },
+                    {
+                        "num": "6",
+                        "title": "Audience Engagement",
+                        "expert": "Community Manager",
+                        "content": "Keep the audience engaged through regular interaction on social media platforms. Respond promptly and politely to comments and messages. Regularly conduct engaging activities like contests or quizzes to keep the community engaged and grow the follower base."
+                    },
+                    {
+                        "num": "7",
+                        "title": "Performance Tracking",
+                        "expert": "Data Analyst",
+                        "content": "Use analytical tools to monitor the website and social media performance. Track metrics such as visitor demographics, time spent on the website, popular pages, conversion rates, social engagement, etc. Use this data for future strategy development."
+                    }
+                ]
+            },
+            {
+                "num": "7",
+                "title": "Launch and Marketing",
+                "expert": "Event Planner and Marketing Specialist",
+                "content": "Organize a grand launch event to promote your Coding Football Emulator Park. Strategize and execute an effective marketing campaign, both online and offline, targeting your specific audience - young women. Consistently monitor and adjust your marketing strategies based on responses and changing dynamics."
             }
         ]
     },
     {
         "num": "3",
-        "title": "Football Academy",
-        "expert": "sports consultant",
-        "content": "Utilize your passion for football to create a Football Academy for the youth. Use the barn as an office or backup indoor training venue. With a low risk-taking ability, you can start small by offering group classes and camps. As your client base expands, consider additional services like personalized coaching and hosting football tournaments.",
-        "prompt": "You are the best sports consultant in the whole world, with 25 years experience. I am your client and i want to start Football Academy in Germany. Describe in detail and write what is needed to start. No need to mention the current year in the answer. Write strictly in the format: number. #name of the business action# $expert to address for detailed information$ - |description of the business action as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+        "title": "Tech-equipped Kitchen Store",
+        "expert": "A Retail and Tech Entrepreneur",
+        "content": "Your equipped kitchen can be transformed into a tech-based kitchen store that demonstrates and sells gadgets which are helpful in cooking. This approach aids in introducing the market of young women to the world of assisted cooking with tech tools while blending in your culinary skills. The store can also host coding lessons on developing kitchen-related apps or coding tutorials for home automation.",
+        "prompt": "You are the best A Retail and Tech Entrepreneur in the whole world, with 25 years experience. I am your client and i want to start Tech-equipped Kitchen Store in Germany. Describe in detail and write what is needed to start. No need to mention the current year in the answer. Write strictly in the format: number. #name of the business action# $expert to address for detailed information$ - |description of the business action as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
         "elaborate": [
-            "1. #Business Plan Development# $business consultant$ - |Start by developing a comprehensive business plan. Your plan should include a clear mission and vision, your target demographic, marketing and sales strategies, a detailed financial forecast, and any potential challenges and your plans to overcome them.| \n\n2. #Regulatory Compliance# $legal consultant$ - |Reach out to a legal expert who specializes in sports-related businesses in Germany. Register your academy in accordance with local laws and regulations, and ensure you have the relevant permissions, licenses, and insurances.|\n\n3. #Acquire Venue and Equipment# $sports facilities consultant$ - |Identify and acquire a location for the academy. Your venue should have enough space for all your training needs. Additionally, procure the necessary football equipment and training aids.| \n\n4. #Hiring Qualified Staff# $human resources consultant$ - |Recruit experienced coaches, trainers, administrative staff, and other personnel. Make sure they meet qualifications, safety requirements, and share your vision for the academy.| \n\n5. #Marketing and Promotion# $marketing consultant$ - |Develop a marketing strategy to generate interest and attract students. Consider various channels such as local advertising, online promotion, school partnerships, open house events, or offering introductory discounts.| \n\n6. #Partnership Building# $strategic alliances consultant$ - |Engage with local schools, community organizations and sports leagues. Forming strategic partnerships can help to increase visibility, gain credibility and attract prospective trainees.|  \n\n7. #Program Development# $sports education consultant$ - |Design a robust and engaging training program for varying age groups and skill levels. Programs should focus on improving fitness, teaching football skills, promoting teamwork, and fostering a love for the sport.|",
+            "1. #Business Plan Development# $Business Consultant$ - |Start with developing a comprehensive business plan outlining your vision, mission, target market, competition, marketing strategy, financial plan and the operational plan of the store.|\n\n2. #Market Research# $Market Researcher$ - |Research about the German market, its acceptance or need for tech-equipped kitchen store. Understand region-specific preferences, competitor analysis, and market gaps.|\n\n3. #Business Registration# $Legal Advisor$ - |Proceed with the formal registration of the business in Germany following the country's rules and regulations for retail businesses.|\n\n4. #Store Location Finalization# $Real Estate Consultant$ - |Identify the right location for your store. Consider factors like proximity to the target market, competition, rental costs and accessibility.|\n\n5. #Inventory Sourcing# $Procurement Specialist$ - |Identify reliable vendors for sourcing high-quality, tech-savvy kitchen tools. Ahdere to the necessary safety standards and aim at variety.|\n\n6. #Store Layout Design# $Interior Designer$ - |Design the store layout in an attractive, functional and customer-friendly way. It should reflect the tech theme of the store.|\n\n7. #Staff Hiring# $Human Resource Consultant$ - |Hire talented and skilled staff for sales, operations, accounts, warehouse management, etc. They should ideally have knowledge about the products and good communication skills.|\n\n8. #Store Launch Promotion# $Marketing Consultant$ - |Plan innovative marketing campaigns for the store\u2019s launch. Use both offline and online marketing channels. Preferably, organize a grand store opening event inviting influencers and target customers.|\n\n9. #Website & App Development# $Tech Consultant$ - |Establish an online presence by designing a user-friendly website and app for the store. These platforms should provide detailed product information, online buying options, and customer support.|\n\n10. #Customer Service Set Up# $Customer Service Expert$ - |Implement a strong, efficient customer service process. Train your staff members on top-notch customer interaction, handling queries, and after-sale services. Enforcing this will ensure customer loyalty and repeat purchases.|",
             {
                 "num": "1",
                 "title": "Business Plan Development",
-                "expert": "business consultant",
-                "content": "Start by developing a comprehensive business plan. Your plan should include a clear mission and vision, your target demographic, marketing and sales strategies, a detailed financial forecast, and any potential challenges and your plans to overcome them.",
-                "prompt": "Your current choice of business action is Business Plan Development. Imagine it's September 2021. you're the best business consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nStart by developing a comprehensive business plan. Your plan should include a clear mission and vision, your target demographic, marketing and sales strategies, a detailed financial forecast, and any potential challenges and your plans to overcome them. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
-                "elaborate": [
-                    "1. #Mission and Vision Statement# $strategy consultant$ - |Articulate the core purpose of your academy and the future you aspire to create. Ensure the vision is inspiring and aligns with your personal values. The mission should denote how you'll achieve this vision in a concrete manner.| \n\n2. #Target Demographic Identification# $market research consultant$ - |Identify and describe your target demographic. It should describe the youth group you're aiming to reach in Germany, including age, socio-economic status, and geographic location. Understanding your market is crucial for designing effective marketing and sales strategies, and for setting up your academy in a location that will be convenient for your target demographic.| \n\n3. #Marketing and Sales Strategies# $marketing consultant$ - |Develop comprehensive strategies to attract and retain your target market. Consider various marketing channels including online platforms, partnerships, events, and media presence. Sales strategies might include initial promotions, referral programs, and value-added offerings.| \n\n4. #Detailed Financial Forecast# $financial consultant$ - |Prepare detailed financial projections showing anticipated expenses and revenues for your academy. Ensure you include start-up costs, ongoing operation expenses, and potential sources of income. Forecast on a monthly basis for at least the first year, and annually for the subsequent two to five years.| \n\n5. #Potential Challenges and Solutions# $risk management consultant$ - |Detail the potential challenges your academy may face. This may include competition, market trends, potential operational issues, risk of injuries, and other factors. Develop comprehensive contingency plans to manage these risks, maintain resilience and ensure the sustainability of your academy.|\n",
-                    {
-                        "num": "1",
-                        "title": "Mission and Vision Statement",
-                        "expert": "strategy consultant",
-                        "content": "Articulate the core purpose of your academy and the future you aspire to create. Ensure the vision is inspiring and aligns with your personal values. The mission should denote how you'll achieve this vision in a concrete manner."
-                    },
-                    {
-                        "num": "2",
-                        "title": "Target Demographic Identification",
-                        "expert": "market research consultant",
-                        "content": "Identify and describe your target demographic. It should describe the youth group you're aiming to reach in Germany, including age, socio-economic status, and geographic location. Understanding your market is crucial for designing effective marketing and sales strategies, and for setting up your academy in a location that will be convenient for your target demographic."
-                    },
-                    {
-                        "num": "3",
-                        "title": "Marketing and Sales Strategies",
-                        "expert": "marketing consultant",
-                        "content": "Develop comprehensive strategies to attract and retain your target market. Consider various marketing channels including online platforms, partnerships, events, and media presence. Sales strategies might include initial promotions, referral programs, and value-added offerings."
-                    },
-                    {
-                        "num": "4",
-                        "title": "Detailed Financial Forecast",
-                        "expert": "financial consultant",
-                        "content": "Prepare detailed financial projections showing anticipated expenses and revenues for your academy. Ensure you include start-up costs, ongoing operation expenses, and potential sources of income. Forecast on a monthly basis for at least the first year, and annually for the subsequent two to five years."
-                    },
-                    {
-                        "num": "5",
-                        "title": "Potential Challenges and Solutions",
-                        "expert": "risk management consultant",
-                        "content": "Detail the potential challenges your academy may face. This may include competition, market trends, potential operational issues, risk of injuries, and other factors. Develop comprehensive contingency plans to manage these risks, maintain resilience and ensure the sustainability of your academy."
-                    }
-                ]
+                "expert": "Business Consultant",
+                "content": "Start with developing a comprehensive business plan outlining your vision, mission, target market, competition, marketing strategy, financial plan and the operational plan of the store."
             },
             {
                 "num": "2",
-                "title": "Regulatory Compliance",
-                "expert": "legal consultant",
-                "content": "Reach out to a legal expert who specializes in sports-related businesses in Germany. Register your academy in accordance with local laws and regulations, and ensure you have the relevant permissions, licenses, and insurances."
+                "title": "Market Research",
+                "expert": "Market Researcher",
+                "content": "Research about the German market, its acceptance or need for tech-equipped kitchen store. Understand region-specific preferences, competitor analysis, and market gaps."
             },
             {
                 "num": "3",
-                "title": "Acquire Venue and Equipment",
-                "expert": "sports facilities consultant",
-                "content": "Identify and acquire a location for the academy. Your venue should have enough space for all your training needs. Additionally, procure the necessary football equipment and training aids."
+                "title": "Business Registration",
+                "expert": "Legal Advisor",
+                "content": "Proceed with the formal registration of the business in Germany following the country's rules and regulations for retail businesses."
             },
             {
                 "num": "4",
-                "title": "Hiring Qualified Staff",
-                "expert": "human resources consultant",
-                "content": "Recruit experienced coaches, trainers, administrative staff, and other personnel. Make sure they meet qualifications, safety requirements, and share your vision for the academy.",
-                "prompt": "Your current choice of business action is Hiring Qualified Staff. Imagine it's September 2021. you're the best human resources consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nRecruit experienced coaches, trainers, administrative staff, and other personnel. Make sure they meet qualifications, safety requirements, and share your vision for the academy. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
-                "elaborate": [
-                    "1. #Defining Job Roles# $job analyst$ - |Define clear job descriptions for each of the roles within your academy. These should include the qualifications, experience, and specific skills needed for each position, including coaches, trainers, and administrative staff.|\n\n2. #Develop Recruitment Strategies# $recruitment specialist$ - |Develop a strategic plan for recruitment. This could include advertisements in relevant publications or websites, partnering with sport-focused employment agencies or recruiting from local universities.|\n\n3. #Establishing Qualification Standards# $certification consultant$ - |Ensure that each potential candidate meet all necessary certification and qualification standards required to coach or train youth in football.|\n\n4. #Conducting Interviews# $interview consultant$ - |Plan and conduct structured interviews. During these sessions, gauge not just the candidates' qualifications but also their alignment with your academy's vision and values.|\n\n5. #Implementing Safety Checks# $safety consultant$ - |All staff members should undergo extensive safety checks, given they will be working with children. This would involve background checks, verifying qualifications and references.|\n\n6. #Employee Induction# $onboarding consultant$ - |Once staff members are recruited, conduct an induction program. This program should acclimatize them with academy's rules, safety guidelines, and organizational culture.|\n\n7. #Periodic Training and Development# $training consultant$ - |Implement a comprehensive ongoing training program for staff to ensure they are up-to-date with the latest coaching techniques, safety protocols and understand the academy's evolving vision.|",
-                    {
-                        "num": "1",
-                        "title": "Defining Job Roles",
-                        "expert": "job analyst",
-                        "content": "Define clear job descriptions for each of the roles within your academy. These should include the qualifications, experience, and specific skills needed for each position, including coaches, trainers, and administrative staff."
-                    },
-                    {
-                        "num": "2",
-                        "title": "Develop Recruitment Strategies",
-                        "expert": "recruitment specialist",
-                        "content": "Develop a strategic plan for recruitment. This could include advertisements in relevant publications or websites, partnering with sport-focused employment agencies or recruiting from local universities."
-                    },
-                    {
-                        "num": "3",
-                        "title": "Establishing Qualification Standards",
-                        "expert": "certification consultant",
-                        "content": "Ensure that each potential candidate meet all necessary certification and qualification standards required to coach or train youth in football."
-                    },
-                    {
-                        "num": "4",
-                        "title": "Conducting Interviews",
-                        "expert": "interview consultant",
-                        "content": "Plan and conduct structured interviews. During these sessions, gauge not just the candidates' qualifications but also their alignment with your academy's vision and values."
-                    },
-                    {
-                        "num": "5",
-                        "title": "Implementing Safety Checks",
-                        "expert": "safety consultant",
-                        "content": "All staff members should undergo extensive safety checks, given they will be working with children. This would involve background checks, verifying qualifications and references."
-                    },
-                    {
-                        "num": "6",
-                        "title": "Employee Induction",
-                        "expert": "onboarding consultant",
-                        "content": "Once staff members are recruited, conduct an induction program. This program should acclimatize them with academy's rules, safety guidelines, and organizational culture."
-                    },
-                    {
-                        "num": "7",
-                        "title": "Periodic Training and Development",
-                        "expert": "training consultant",
-                        "content": "Implement a comprehensive ongoing training program for staff to ensure they are up-to-date with the latest coaching techniques, safety protocols and understand the academy's evolving vision."
-                    }
-                ]
+                "title": "Store Location Finalization",
+                "expert": "Real Estate Consultant",
+                "content": "Identify the right location for your store. Consider factors like proximity to the target market, competition, rental costs and accessibility."
             },
             {
                 "num": "5",
-                "title": "Marketing and Promotion",
-                "expert": "marketing consultant",
-                "content": "Develop a marketing strategy to generate interest and attract students. Consider various channels such as local advertising, online promotion, school partnerships, open house events, or offering introductory discounts.",
-                "prompt": "Your current choice of business action is Marketing and Promotion. Imagine it's September 2021. you're the best marketing consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nDevelop a marketing strategy to generate interest and attract students. Consider various channels such as local advertising, online promotion, school partnerships, open house events, or offering introductory discounts. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                "title": "Inventory Sourcing",
+                "expert": "Procurement Specialist",
+                "content": "Identify reliable vendors for sourcing high-quality, tech-savvy kitchen tools. Ahdere to the necessary safety standards and aim at variety.",
+                "prompt": "Your current choice of business action is Inventory Sourcing. Imagine it's September 2021. you're the best Procurement Specialist in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nIdentify reliable vendors for sourcing high-quality, tech-savvy kitchen tools. Ahdere to the necessary safety standards and aim at variety. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
                 "elaborate": [
-                    "1. #Local Advertising Campaigns# $advertising consultant$ - |Launch strategic advertising campaigns in local newspapers, radio, and television channels that target your demographic. Encapsulate the unique features of your academy and the benefits of enrolling.|\n\n2. #Online Promotion# $digital marketing expert$ - |Create an engaging website and active social media presence on platforms like Facebook, Instagram, and Twitter. Regularly update these platforms with appealing content related to your academy and football in general to attract and retain potential customers.| \n\n3. #School Partnerships# $community outreach coordinator$ - |Establish partnerships with local schools. Offer services such as after-school football classes, school football clinics, or free workshops. In exchange, ask them to promote your academy among students and parents.|\n\n4. #Open House Events# $event planner$ - |Organize open house events at your academy. Allow potential students and their parents to tour the facilities, meet the coaches, and participate in trial sessions. Use this event as an opportunity to showcase your academy's strengths and engage with potential customers.| \n\n5. #Introductory Discounts# $pricing strategist$ - |Develop introductory discounts for the first batch of students, or those who sign up during the open house. These incentives can attract early adopters and generate buzz around your academy.| \n\n6. #SEO and Search Advertising# $SEO expert$ - |Optimize your website to improve search engine rankings and visibility. Also invest in paid search advertising to target prospective customers seeking football academies in your area.|\n\n7. #Email Marketing# $email marketing consultant$ - |Build an email list to send out newsletters, updates, discounts, and other meaningful content. Use this tool for keeping your academy in the minds of potential and current customers.| \n\n8. #Customer Referrals# $referral marketing specialist$ - |Implement a referral program where current students or their parents can refer friends to your academy in return for incentives such as discounted classes or free merchandise.|",
+                    "1. #Vendor Identification# $Market Research Specialist$ - |Conduct extensive market research to shortlist the potential vendors trading in high-quality, tech-savvy kitchen tools. Focus on local, national and international suppliers.|\n\n2. #Product Quality Assessment# $Product Quality Assurance Expert$ - |Analyze the quality and tech-evolution of the products provided by the shortlisted vendors. Be sure to choose vendors that offer the best blend of innovation and quality.|\n\n3. #Safety Standard Adherence Check# $Safety Compliance Officer$ - |Verify the compliance of the vendor's products with local and international safety standards. The products must not pose any safety risks to the end-users.|\n\n4. #Financial Stability Inquiry# $Financial Analyst$ - |Evaluate the financial stability of the vendors. You must assure that they are capable to deliver the required stock consistently and handle any unexpected bulk orders.|\n\n5. #Legal Compliance Verification# $Legal Advisor$ - |Confirm the legal legitimacy of the vendors with relevant business licenses and import-export licenses, if applicable. The vendors must follow standard corporate ethics and respect intellectual property rights.|\n\n6. #Negotiation of Terms# $Negotiation Expert$ - |Negotiate the purchase, payment, and delivery terms with the vendors. Aim for discounts on bulk orders, favorable payment schedules, and reliable delivery commitments.|\n\n7. #Contract Signing# $Contract Lawyer$ - |Formalize the vendor agreements with legally binding contracts, ensuring protection from any future discrepancies or issues. The contracts must clearly outline all agreed terms.|\n\n8. #Order Placement and Fulfilment Monitoring# $Supply Chain Manager$ - |Regularly place orders following the demand forecast and monitor the fulfilment of these orders to avoid stock-outs.|\n\n9. #Continuous Performance Evaluation# $Performance Management Specialist$ - |Evaluate the performance of the vendors in areas like delivery speed, product quality, and customer service. Adopt a vendor scorecard system for easy assessment.|",
                     {
                         "num": "1",
-                        "title": "Local Advertising Campaigns",
-                        "expert": "advertising consultant",
-                        "content": "Launch strategic advertising campaigns in local newspapers, radio, and television channels that target your demographic. Encapsulate the unique features of your academy and the benefits of enrolling."
+                        "title": "Vendor Identification",
+                        "expert": "Market Research Specialist",
+                        "content": "Conduct extensive market research to shortlist the potential vendors trading in high-quality, tech-savvy kitchen tools. Focus on local, national and international suppliers."
                     },
                     {
                         "num": "2",
-                        "title": "Online Promotion",
-                        "expert": "digital marketing expert",
-                        "content": "Create an engaging website and active social media presence on platforms like Facebook, Instagram, and Twitter. Regularly update these platforms with appealing content related to your academy and football in general to attract and retain potential customers."
+                        "title": "Product Quality Assessment",
+                        "expert": "Product Quality Assurance Expert",
+                        "content": "Analyze the quality and tech-evolution of the products provided by the shortlisted vendors. Be sure to choose vendors that offer the best blend of innovation and quality."
                     },
                     {
                         "num": "3",
-                        "title": "School Partnerships",
-                        "expert": "community outreach coordinator",
-                        "content": "Establish partnerships with local schools. Offer services such as after-school football classes, school football clinics, or free workshops. In exchange, ask them to promote your academy among students and parents."
+                        "title": "Safety Standard Adherence Check",
+                        "expert": "Safety Compliance Officer",
+                        "content": "Verify the compliance of the vendor's products with local and international safety standards. The products must not pose any safety risks to the end-users."
                     },
                     {
                         "num": "4",
-                        "title": "Open House Events",
-                        "expert": "event planner",
-                        "content": "Organize open house events at your academy. Allow potential students and their parents to tour the facilities, meet the coaches, and participate in trial sessions. Use this event as an opportunity to showcase your academy's strengths and engage with potential customers."
+                        "title": "Financial Stability Inquiry",
+                        "expert": "Financial Analyst",
+                        "content": "Evaluate the financial stability of the vendors. You must assure that they are capable to deliver the required stock consistently and handle any unexpected bulk orders."
                     },
                     {
                         "num": "5",
-                        "title": "Introductory Discounts",
-                        "expert": "pricing strategist",
-                        "content": "Develop introductory discounts for the first batch of students, or those who sign up during the open house. These incentives can attract early adopters and generate buzz around your academy."
+                        "title": "Legal Compliance Verification",
+                        "expert": "Legal Advisor",
+                        "content": "Confirm the legal legitimacy of the vendors with relevant business licenses and import-export licenses, if applicable. The vendors must follow standard corporate ethics and respect intellectual property rights."
                     },
                     {
                         "num": "6",
-                        "title": "SEO and Search Advertising",
-                        "expert": "SEO expert",
-                        "content": "Optimize your website to improve search engine rankings and visibility. Also invest in paid search advertising to target prospective customers seeking football academies in your area."
+                        "title": "Negotiation of Terms",
+                        "expert": "Negotiation Expert",
+                        "content": "Negotiate the purchase, payment, and delivery terms with the vendors. Aim for discounts on bulk orders, favorable payment schedules, and reliable delivery commitments."
                     },
                     {
                         "num": "7",
-                        "title": "Email Marketing",
-                        "expert": "email marketing consultant",
-                        "content": "Build an email list to send out newsletters, updates, discounts, and other meaningful content. Use this tool for keeping your academy in the minds of potential and current customers."
+                        "title": "Contract Signing",
+                        "expert": "Contract Lawyer",
+                        "content": "Formalize the vendor agreements with legally binding contracts, ensuring protection from any future discrepancies or issues. The contracts must clearly outline all agreed terms."
                     },
                     {
                         "num": "8",
-                        "title": "Customer Referrals",
-                        "expert": "referral marketing specialist",
-                        "content": "Implement a referral program where current students or their parents can refer friends to your academy in return for incentives such as discounted classes or free merchandise."
+                        "title": "Order Placement and Fulfilment Monitoring",
+                        "expert": "Supply Chain Manager",
+                        "content": "Regularly place orders following the demand forecast and monitor the fulfilment of these orders to avoid stock-outs."
+                    },
+                    {
+                        "num": "9",
+                        "title": "Continuous Performance Evaluation",
+                        "expert": "Performance Management Specialist",
+                        "content": "Evaluate the performance of the vendors in areas like delivery speed, product quality, and customer service. Adopt a vendor scorecard system for easy assessment."
                     }
                 ]
             },
             {
                 "num": "6",
-                "title": "Partnership Building",
-                "expert": "strategic alliances consultant",
-                "content": "Engage with local schools, community organizations and sports leagues. Forming strategic partnerships can help to increase visibility, gain credibility and attract prospective trainees."
+                "title": "Store Layout Design",
+                "expert": "Interior Designer",
+                "content": "Design the store layout in an attractive, functional and customer-friendly way. It should reflect the tech theme of the store."
             },
             {
                 "num": "7",
-                "title": "Program Development",
-                "expert": "sports education consultant",
-                "content": "Design a robust and engaging training program for varying age groups and skill levels. Programs should focus on improving fitness, teaching football skills, promoting teamwork, and fostering a love for the sport."
+                "title": "Staff Hiring",
+                "expert": "Human Resource Consultant",
+                "content": "Hire talented and skilled staff for sales, operations, accounts, warehouse management, etc. They should ideally have knowledge about the products and good communication skills.",
+                "prompt": "Your current choice of business action is Staff Hiring. Imagine it's September 2021. you're the best Human Resource Consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nHire talented and skilled staff for sales, operations, accounts, warehouse management, etc. They should ideally have knowledge about the products and good communication skills. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                "elaborate": [
+                    "1. #Job Description Creation# $Job Analyst$ - |Draft detailed job descriptions for the required positions: sales, operations, accounts, warehouse management. This should include qualifications, skills needed, key responsibilities, and expected performance outcomes.|\n\n2. #Advertisement of Vacancies# $Marketing Executive$ - |Advertise the job postings across relevant platforms that attract the right talent. This can include job search websites, social media, industry events and networking.|\n\n3. #Review of Applications# $HR Manager$ - |Scrutinize received applications, shortlist potential candidates based on their experience, qualifications and skill set in relation to the job requirement.|\n\n4. #Interview Process# $Recruitment Specialist$ - |Plan and execute an interview process that challenges candidates' knowledge, problem-solving ability, and communication skills. This should be a multi-stage process including technical rounds, HR rounds and final interview by the management.|\n\n5. #Reference Check# $Background Verification Officer$ - |Perform detailed reference checks to validate the information provided by the candidates. This includes contacting previous employers, universities or any other provided references.|\n\n6. #Job Offer# $HR Manager$ - |Deliver job offers to the selected candidates detailing the role, salary, benefits, and other terms of employment. Conduct salary negotiation if needed.|\n\n7. #Training and Onboarding# $Training Officer$ - |Onboard the new hires by introducing them to the company culture and job expectations. Organize product training sessions to ensure they have knowledge about the products.|\n\n8. #Performance Management Plan# $Performance Management Consultant$ - |Set up a clear performance management plan outlining the performance measurement parameters, regular review intervals, and potential growth opportunities.|\n\n9. #Retention Strategies# $Employee Engagement Expert$ - |Develop employee retention strategies such as competitive pay, employee growth and development, recognizing and rewarding good performance, and fostering positive work environment.|",
+                    {
+                        "num": "1",
+                        "title": "Job Description Creation",
+                        "expert": "Job Analyst",
+                        "content": "Draft detailed job descriptions for the required positions: sales, operations, accounts, warehouse management. This should include qualifications, skills needed, key responsibilities, and expected performance outcomes."
+                    },
+                    {
+                        "num": "2",
+                        "title": "Advertisement of Vacancies",
+                        "expert": "Marketing Executive",
+                        "content": "Advertise the job postings across relevant platforms that attract the right talent. This can include job search websites, social media, industry events and networking."
+                    },
+                    {
+                        "num": "3",
+                        "title": "Review of Applications",
+                        "expert": "HR Manager",
+                        "content": "Scrutinize received applications, shortlist potential candidates based on their experience, qualifications and skill set in relation to the job requirement."
+                    },
+                    {
+                        "num": "4",
+                        "title": "Interview Process",
+                        "expert": "Recruitment Specialist",
+                        "content": "Plan and execute an interview process that challenges candidates' knowledge, problem-solving ability, and communication skills. This should be a multi-stage process including technical rounds, HR rounds and final interview by the management."
+                    },
+                    {
+                        "num": "5",
+                        "title": "Reference Check",
+                        "expert": "Background Verification Officer",
+                        "content": "Perform detailed reference checks to validate the information provided by the candidates. This includes contacting previous employers, universities or any other provided references."
+                    },
+                    {
+                        "num": "6",
+                        "title": "Job Offer",
+                        "expert": "HR Manager",
+                        "content": "Deliver job offers to the selected candidates detailing the role, salary, benefits, and other terms of employment. Conduct salary negotiation if needed."
+                    },
+                    {
+                        "num": "7",
+                        "title": "Training and Onboarding",
+                        "expert": "Training Officer",
+                        "content": "Onboard the new hires by introducing them to the company culture and job expectations. Organize product training sessions to ensure they have knowledge about the products."
+                    },
+                    {
+                        "num": "8",
+                        "title": "Performance Management Plan",
+                        "expert": "Performance Management Consultant",
+                        "content": "Set up a clear performance management plan outlining the performance measurement parameters, regular review intervals, and potential growth opportunities."
+                    },
+                    {
+                        "num": "9",
+                        "title": "Retention Strategies",
+                        "expert": "Employee Engagement Expert",
+                        "content": "Develop employee retention strategies such as competitive pay, employee growth and development, recognizing and rewarding good performance, and fostering positive work environment."
+                    }
+                ]
+            },
+            {
+                "num": "8",
+                "title": "Store Launch Promotion",
+                "expert": "Marketing Consultant",
+                "content": "Plan innovative marketing campaigns for the store\u2019s launch. Use both offline and online marketing channels. Preferably, organize a grand store opening event inviting influencers and target customers."
+            },
+            {
+                "num": "9",
+                "title": "Website & App Development",
+                "expert": "Tech Consultant",
+                "content": "Establish an online presence by designing a user-friendly website and app for the store. These platforms should provide detailed product information, online buying options, and customer support.",
+                "prompt": "Your current choice of business action is Website & App Development. Imagine it's September 2021. you're the best Tech Consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nEstablish an online presence by designing a user-friendly website and app for the store. These platforms should provide detailed product information, online buying options, and customer support. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                "elaborate": [
+                    "1. #Website Design and Layout# $Web Designer$ - |Plan an intuitive, orderly layout for the website. Ensure it is mobile-friendly as well as desktop-friendly, with easy-to-navigate menus.|\n\n2. #App Development# $Mobile App Developer$ - |Simultaneously, develop a user-friendly mobile app. It should mirror the design of the website for a consistent user experience across platforms.|\n\n3. #Product Catalogue Creation# $Product Manager$ - |Develop a comprehensive product catalogue that provides all necessary product details. Each item should contain product images, description, pricing, and a digital Add-to-Cart option.|\n\n4. #Online Payment Integration# $Payment Gateway Consultant$ - |Integrate secure online payment gateways to facilitate transactions. Provide multiple payment options for customer convenience.|\n\n5. #Search Engine Optimization (SEO)# $SEO Expert$ - |Ensure that the website and app are thoroughly SEO optimized. This improves their visibility on search engines, thus attracting more customers.|\n\n6. #Live Chat Integration# $Customer Service Specialist$ - |Integrate a live chat option for real-time customer support. Ensure there is an efficient team in place who can handle and quickly respond to the customer queries.|\n\n7. #E-commerce Security# $Data Security Expert$ - |Ensure the website and app follow all necessary e-commerce security standards to protect sensitive user data.|\n\n8. #Testing and Debugging# $Software Quality Assurance Specialist$ - |Thoroughly test the website and app for any bugs or errors before launching. Check for smooth functionality of all features.|\n\n9. #Website and App Launch# $Digital Marketing Specialist$ - |Launch the website and app once they are ready. Create a marketing campaign to promote these platforms.|\n\n10. #Continuous Updating & Maintenance# $Website Maintenance Expert$ - |Continue to update and maintain your website and app post-launch. Frequent updates and fixes ensure a smooth and positive user experience.|",
+                    {
+                        "num": "1",
+                        "title": "Website Design and Layout",
+                        "expert": "Web Designer",
+                        "content": "Plan an intuitive, orderly layout for the website. Ensure it is mobile-friendly as well as desktop-friendly, with easy-to-navigate menus."
+                    },
+                    {
+                        "num": "2",
+                        "title": "App Development",
+                        "expert": "Mobile App Developer",
+                        "content": "Simultaneously, develop a user-friendly mobile app. It should mirror the design of the website for a consistent user experience across platforms.",
+                        "prompt": "Your current choice of business action is App Development. Imagine it's September 2021. you're the best Mobile App Developer in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nSimultaneously, develop a user-friendly mobile app. It should mirror the design of the website for a consistent user experience across platforms. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                        "elaborate": [
+                            "1. #App Conceptualization# $Product Strategist$ - |Define your app's purpose, features and goals. Making sure it aligns with your website to provide a consistent user experience.|\n\n2. #UI/UX Design# $Graphic Designer$ - |Design the user interface to be intuitive, user-friendly and visually appealing, mirroring the website style.|\n\n3. #App Development Framework Selection# $Technical Architect$ - |Decide on the app development framework that best suits your business needs and technological requirements.|\n\n4. #App Programming and Coding# $Software Engineer$ - |Begin the technical phase of app development. Code the features and functionality of the app.|\n\n5. #Integration with Website# $Backend Developer$ - |Integrate the app with the existing website and make sure they are synchronized. Updates on one platform should reflect on another.|\n\n6. #Security Measures# $Cybersecurity Expert$ - |Incorporate top-level security measures to protect user data and payment information.|\n\n7. #Payment Gateway Integration# $Payments Specialist$ - |Set up and test your payment gateway to ensure safe and smooth transactions from the mobile app.|\n\n8. #App Testing and Debugging# $QA Tester$ - |Conduct rigorous testing on android and iOS platforms, checking for any bugs or flaws and rectify these to ensure optimal performance.|\n\n9. #App Store Optimization (ASO)# $ASO Expert$ - |Optimize your app store listing with relevant keywords, screenshots and an enticing description to increase visibility.|\n\n10. #App Launch and Updates# $Mobile App Marketing Expert$ - |Launch your app on different app stores. Post launch, keep a track of user feedback and continuously update the app to improve and add new features.|",
+                            {
+                                "num": "1",
+                                "title": "App Conceptualization",
+                                "expert": "Product Strategist",
+                                "content": "Define your app's purpose, features and goals. Making sure it aligns with your website to provide a consistent user experience."
+                            },
+                            {
+                                "num": "2",
+                                "title": "UI/UX Design",
+                                "expert": "Graphic Designer",
+                                "content": "Design the user interface to be intuitive, user-friendly and visually appealing, mirroring the website style."
+                            },
+                            {
+                                "num": "3",
+                                "title": "App Development Framework Selection",
+                                "expert": "Technical Architect",
+                                "content": "Decide on the app development framework that best suits your business needs and technological requirements."
+                            },
+                            {
+                                "num": "4",
+                                "title": "App Programming and Coding",
+                                "expert": "Software Engineer",
+                                "content": "Begin the technical phase of app development. Code the features and functionality of the app."
+                            },
+                            {
+                                "num": "5",
+                                "title": "Integration with Website",
+                                "expert": "Backend Developer",
+                                "content": "Integrate the app with the existing website and make sure they are synchronized. Updates on one platform should reflect on another."
+                            },
+                            {
+                                "num": "6",
+                                "title": "Security Measures",
+                                "expert": "Cybersecurity Expert",
+                                "content": "Incorporate top-level security measures to protect user data and payment information."
+                            },
+                            {
+                                "num": "7",
+                                "title": "Payment Gateway Integration",
+                                "expert": "Payments Specialist",
+                                "content": "Set up and test your payment gateway to ensure safe and smooth transactions from the mobile app."
+                            },
+                            {
+                                "num": "8",
+                                "title": "App Testing and Debugging",
+                                "expert": "QA Tester",
+                                "content": "Conduct rigorous testing on android and iOS platforms, checking for any bugs or flaws and rectify these to ensure optimal performance."
+                            },
+                            {
+                                "num": "9",
+                                "title": "App Store Optimization (ASO)",
+                                "expert": "ASO Expert",
+                                "content": "Optimize your app store listing with relevant keywords, screenshots and an enticing description to increase visibility."
+                            },
+                            {
+                                "num": "10",
+                                "title": "App Launch and Updates",
+                                "expert": "Mobile App Marketing Expert",
+                                "content": "Launch your app on different app stores. Post launch, keep a track of user feedback and continuously update the app to improve and add new features."
+                            }
+                        ]
+                    },
+                    {
+                        "num": "3",
+                        "title": "Product Catalogue Creation",
+                        "expert": "Product Manager",
+                        "content": "Develop a comprehensive product catalogue that provides all necessary product details. Each item should contain product images, description, pricing, and a digital Add-to-Cart option."
+                    },
+                    {
+                        "num": "4",
+                        "title": "Online Payment Integration",
+                        "expert": "Payment Gateway Consultant",
+                        "content": "Integrate secure online payment gateways to facilitate transactions. Provide multiple payment options for customer convenience."
+                    },
+                    {
+                        "num": "5",
+                        "title": "Search Engine Optimization (SEO)",
+                        "expert": "SEO Expert",
+                        "content": "Ensure that the website and app are thoroughly SEO optimized. This improves their visibility on search engines, thus attracting more customers."
+                    },
+                    {
+                        "num": "6",
+                        "title": "Live Chat Integration",
+                        "expert": "Customer Service Specialist",
+                        "content": "Integrate a live chat option for real-time customer support. Ensure there is an efficient team in place who can handle and quickly respond to the customer queries.",
+                        "prompt": "Your current choice of business action is Live Chat Integration. Imagine it's September 2021. you're the best Customer Service Specialist in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nIntegrate a live chat option for real-time customer support. Ensure there is an efficient team in place who can handle and quickly respond to the customer queries. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                        "elaborate": [
+                            "1. #Live Chat Software Selection# $Software Consultant$ - |Choose an appropriate live chat software. The software should be reliable, scalable, and must have key features such as automatic message delivery, file sharing, and chat history.|\n\n2. #Integration of Live Chat# $Web Development Consultant$ - |Integrate the chosen live chat software with the website and mobile application. The integration process should be seamless and the chat box should be easily accessed on any page of the site.|\n\n3. #Staffing Live Chat Representatives# $Human Resources Consultant$ - |Hire a team of live chat representatives. These representatives should be trained in online customer service and have excellent communication and problem-solving skills.|\n\n4. #Training Live Chat Representatives# $Training Development Expert$ - |Provide training to the live chat representatives. The training should cover the usage of the live chat software, protocol for handling different types of queries, and focus on providing quick and precise solutions.|\n\n5. #Creating Chat Protocols# $Business Process Analyst$ - |Set protocols for handling customer chats. These must include guidelines for greeting customers, identifying their needs, resolving complaints, and ending the chat.|\n\n6. #Quality Monitoring# $Quality Assurance Specialist$ - |Monitor the quality of live chat support regularly. Assess the response time, resolution time, and customer satisfaction rate to gauge the efficiency of the live chat representatives.|\n\n7. #Feedback Mechanism# $Customer Feedback Analyst$ - |Develop a feedback system for customers to rate their live chat experience. This will provide valuable insights to improve the service and address any issues quickly.|\n\n8. #Escalation Procedure# $Customer Service Manager$ - |Establish an escalation process for complex issues or complaints that cannot be resolved via live chat. This ensures that all customer concerns are addressed and resolved in a timely manner.|\n\n9. #Availability Schedule# $Workforce Management Specialist$ - |Determine the hours of live chat availability based on your target audience and their shopping patterns. Understand that 24/7 support may be needed to cater to customers from different time zones.| \n\n10. #Continuous Improvement# $Service Improvement Specialist$ - |Continually improve the live chat service based on customer feedback and performance metrics. Regularly update training for representatives and make necessary adjustments to the live chat platform for enhanced user experience.|",
+                            {
+                                "num": "1",
+                                "title": "Live Chat Software Selection",
+                                "expert": "Software Consultant",
+                                "content": "Choose an appropriate live chat software. The software should be reliable, scalable, and must have key features such as automatic message delivery, file sharing, and chat history."
+                            },
+                            {
+                                "num": "2",
+                                "title": "Integration of Live Chat",
+                                "expert": "Web Development Consultant",
+                                "content": "Integrate the chosen live chat software with the website and mobile application. The integration process should be seamless and the chat box should be easily accessed on any page of the site."
+                            },
+                            {
+                                "num": "3",
+                                "title": "Staffing Live Chat Representatives",
+                                "expert": "Human Resources Consultant",
+                                "content": "Hire a team of live chat representatives. These representatives should be trained in online customer service and have excellent communication and problem-solving skills."
+                            },
+                            {
+                                "num": "4",
+                                "title": "Training Live Chat Representatives",
+                                "expert": "Training Development Expert",
+                                "content": "Provide training to the live chat representatives. The training should cover the usage of the live chat software, protocol for handling different types of queries, and focus on providing quick and precise solutions."
+                            },
+                            {
+                                "num": "5",
+                                "title": "Creating Chat Protocols",
+                                "expert": "Business Process Analyst",
+                                "content": "Set protocols for handling customer chats. These must include guidelines for greeting customers, identifying their needs, resolving complaints, and ending the chat."
+                            },
+                            {
+                                "num": "6",
+                                "title": "Quality Monitoring",
+                                "expert": "Quality Assurance Specialist",
+                                "content": "Monitor the quality of live chat support regularly. Assess the response time, resolution time, and customer satisfaction rate to gauge the efficiency of the live chat representatives."
+                            },
+                            {
+                                "num": "7",
+                                "title": "Feedback Mechanism",
+                                "expert": "Customer Feedback Analyst",
+                                "content": "Develop a feedback system for customers to rate their live chat experience. This will provide valuable insights to improve the service and address any issues quickly."
+                            },
+                            {
+                                "num": "8",
+                                "title": "Escalation Procedure",
+                                "expert": "Customer Service Manager",
+                                "content": "Establish an escalation process for complex issues or complaints that cannot be resolved via live chat. This ensures that all customer concerns are addressed and resolved in a timely manner."
+                            },
+                            {
+                                "num": "9",
+                                "title": "Availability Schedule",
+                                "expert": "Workforce Management Specialist",
+                                "content": "Determine the hours of live chat availability based on your target audience and their shopping patterns. Understand that 24/7 support may be needed to cater to customers from different time zones."
+                            },
+                            {
+                                "num": "10",
+                                "title": "Continuous Improvement",
+                                "expert": "Service Improvement Specialist",
+                                "content": "Continually improve the live chat service based on customer feedback and performance metrics. Regularly update training for representatives and make necessary adjustments to the live chat platform for enhanced user experience."
+                            }
+                        ]
+                    },
+                    {
+                        "num": "7",
+                        "title": "E-commerce Security",
+                        "expert": "Data Security Expert",
+                        "content": "Ensure the website and app follow all necessary e-commerce security standards to protect sensitive user data."
+                    },
+                    {
+                        "num": "8",
+                        "title": "Testing and Debugging",
+                        "expert": "Software Quality Assurance Specialist",
+                        "content": "Thoroughly test the website and app for any bugs or errors before launching. Check for smooth functionality of all features."
+                    },
+                    {
+                        "num": "9",
+                        "title": "Website and App Launch",
+                        "expert": "Digital Marketing Specialist",
+                        "content": "Launch the website and app once they are ready. Create a marketing campaign to promote these platforms."
+                    },
+                    {
+                        "num": "10",
+                        "title": "Continuous Updating & Maintenance",
+                        "expert": "Website Maintenance Expert",
+                        "content": "Continue to update and maintain your website and app post-launch. Frequent updates and fixes ensure a smooth and positive user experience."
+                    }
+                ]
+            },
+            {
+                "num": "10",
+                "title": "Customer Service Set Up",
+                "expert": "Customer Service Expert",
+                "content": "Implement a strong, efficient customer service process. Train your staff members on top-notch customer interaction, handling queries, and after-sale services. Enforcing this will ensure customer loyalty and repeat purchases."
             }
         ]
     }

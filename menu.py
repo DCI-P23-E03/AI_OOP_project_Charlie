@@ -27,6 +27,7 @@ class Menu(ABC):
         
     def print_menu(self):
         x("clear")
+        print(self.list_of_menu_items[0]+"\n")
         print(self._menu)
 
     def _access_menu_item(self,lst):

@@ -13,7 +13,8 @@ class BusinessIdeasChat:
         openai.api_key=os.getenv('API_KEY')
         self.initial_prompt=initial_prompt
         self.__expert="business consultant"
-        self._list_of_menu_items=["Menu"]
+        self.menu_title="Menu"
+        self._list_of_menu_items=[self.menu_title]
         self._make_system_role()
         self.__initialize_conversation()
         
