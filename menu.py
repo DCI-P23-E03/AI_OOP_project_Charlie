@@ -12,7 +12,7 @@ class Menu(ABC):
     def __init__(self, list_of_menu_items, W):
         
         self.coords=[1]
-        self.selected=set()
+        #self.selected=set()
         self.W=W
         self.N=len(list_of_menu_items)-1
         self.list_of_menu_items=list_of_menu_items
@@ -112,6 +112,7 @@ class VerticalMenu(Menu):
         return cls._instance
     
     def __init__(self, list_of_menu_items, W):
+        self.selected=set()
         super().__init__(list_of_menu_items, W)
         #self.selected=set()
         
@@ -149,6 +150,7 @@ class VerticalMenu(Menu):
         if len(self._access_menu_item(self.coords))==1:
             if self.coords[-1] not in self.selected:
                 self.selected.add(self.coords[-1])
+                
                 
             else:
                 self.selected.discard(self.coords[-1])
@@ -231,7 +233,8 @@ class VerticalMenu(Menu):
                     #if len(cur_entry[0])<self.W-2:
                     
                     filled[j].append(self.__chop_menu_entry(cur_entry[0]).ljust(self.W-2)+int(len(cur_entry)>1)*" →"
-                                     +int(j+2-top_of_menu[i] in self.selected and i==depth-1)*" ✓")
+                                     +int(j+2-top_of_menu[i] in self.selected and i==depth-1)*" ✓"
+                                     )
                     #else:
                     #    filled[j].append(cur_entry[0][:self.W-3]+"…"+int(len(cur_entry)>1)*" →")
                 else:
@@ -291,7 +294,10 @@ class VerticalMenu(Menu):
                         if i==depth-1:
                             len_cur_menu=max(self.W,len_cur_item+2)
                             #menu_content+=vline+colored(filled[j][i].ljust(self.W),"blue")
-                            menu_content+=vline+colored((self._access_menu_item(self.coords)[0].ljust(len_cur_menu-2)+int(len(self._access_menu_item(self.coords))>1)*" →"+int(j+2-top_of_menu[i] in self.selected and i==depth-1)*" ✓").ljust(len_cur_menu),"blue")
+                            menu_content+=vline+colored((self._access_menu_item(self.coords)[0].ljust(len_cur_menu-2)+int(len(self._access_menu_item(self.coords))>1)*" →"
+                                                         +int(j+2-top_of_menu[i] in self.selected and i==depth-1)*" ✓"
+                                                        ).ljust(len_cur_menu),"blue"
+                                                         )
                         else:
                             menu_content+=vline+colored(filled[j][i].ljust(self.W),"green")
                     else:
@@ -383,25 +389,25 @@ class HorizontalMenu(Menu):
         print(s)
         return s
     
-
-menu_list=[
-    "Menu",[
-        "1",
-            ["1.1"],
-            ["1.2 lalalalalala",
-                ["1.2.1"],
-                ["1.2.2",
-                    ["1.2.2.1 lalalala"]]],
-            ["1.3"]
-        ],
-        ["2",
-            ["2.1 laaaawaaaaa"],
-            ["2.2",
-                ["2.2.1",
-                    ["2.2.1.1"]]]
-        ],
-        ["3"],
-        ["4lalalalalala"]
-        ]
-c=VerticalMenu(menu_list, 10)
-c.navigate_menu()
+if __name__ == "__main__":
+    menu_list=[
+        "Menu",[
+            "1",
+                ["1.1"],
+                ["1.2 lalalalalala",
+                    ["1.2.1"],
+                    ["1.2.2",
+                        ["1.2.2.1 lalalala"]]],
+                ["1.3"]
+            ],
+            ["2",
+                ["2.1 laaaawaaaaa"],
+                ["2.2",
+                    ["2.2.1",
+                        ["2.2.1.1"]]]
+            ],
+            ["3"],
+            ["4lalalalalala"]
+            ]
+    c=VerticalMenu(menu_list, 10)
+    c.navigate_menu()

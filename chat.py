@@ -5,6 +5,7 @@ import openai # pip install openai
 from dotenv import load_dotenv
 import re
 import getch
+import json
 
 class BusinessIdeasChat:
     def __init__(self,initial_prompt):
@@ -68,9 +69,9 @@ class BusinessIdeasChat:
         self._make_system_role() #new system role with new expert
         self.conversation[0]["content"]=self.system_role
         if len(coords)==1:
-            prompt=f"You are the best {self.__expert} in the whole world, with 20 years experience. I am your client and i want to start {cur_dialog_step['title']} in the Germany. Describe in detail and write what is needed to start. No need to mention the current year(2021) in the answer. Write strictly in the format: number. #name of the idea# $the area expert$ - |business action in imperative form for the second person| Use only these seperators:#$| do not write an introduction or a conclusion"
+            prompt=f"You are the best {self.__expert} in the whole world, with 20 years experience. I am your client and i want to start {cur_dialog_step['title']} in the Germany. Describe in detail and write what is needed to start. No need to mention the current year(2021) in the answer. Write strictly in the format: number. #name of the idea# $the area expert$ - |business action as a single block in imperative form for the second person| Use only these seperators:#$| do not write an introduction or a conclusion"
         else:
-            prompt=f"Your current choice of business action is {cur_dialog_step['title']}. Imagine it's September 2021. you're the best {self.__expert} in the whole world, with 20 years of experience. I'm your client and i want you to fetch me a detailed report corresponding to this business action using the following information.\n {cur_dialog_step['content']} \nNo need to mention the current year in the answer.\nWrite strictly in the format: number. #name of the idea# $the area expert$ - |business action in imperative form for the second person| Use only these seperators:#$| do not write an introduction or a conclusion"
+            prompt=f"Your current choice of business action is {cur_dialog_step['title']}. Imagine it's September 2021. you're the best {self.__expert} in the whole world, with 20 years of experience. I'm your client and i want you to fetch me a detailed report corresponding to this business action using the following information.\n {cur_dialog_step['content']} \nNo need to mention the current year in the answer.\nWrite strictly in the format: number. #name of the idea# $the area expert$ - |business action as a single block in imperative form for the second person| Use only these seperators:#$| do not write an introduction or a conclusion"
         
         self.conversation.append({"role": "user", "content": prompt})
         self.response = openai.ChatCompletion.create(
@@ -97,18 +98,21 @@ class BusinessIdeasChat:
 
 
 if __name__ == "__main__":
-    init_prompt='Considering the importance of individual skills, interests, and assets for successful business, how can these elements be best utilized for a business idea generation? My primary skills and competencies: perseverence.I have experience and/or education in: business. My hobbies are: cooking. I have access to: car, internet. My business format preference: online.I would specifically like to target these markets:Germany. I am willing to take low level of risk,My vision for my business in the long term: Own a profitable business. Give me three best business ideas. Write strictly in the format: number. #name of the idea# $the area expert$ - |business idea in imperative form for the second person| Use only these seperators:#$| do not write an introduction or a conclusion'
+    init_prompt='Considering the importance of individual skills, interests, and assets for successful business, how can these elements be best utilized for a business idea generation? My primary skills and competencies: perseverence.I have experience and/or education in: business. My hobbies are: cooking. I have access to: car, internet. My business format preference: online.I would specifically like to target these markets:Germany. I am willing to take low level of risk,My vision for my business in the long term: Own a profitable business. Give me three best business ideas. Write strictly in the format: number. #name of the idea# $the area expert$ - |business idea as a single block in imperative form for the second person| Use only these seperators:#$| do not write an introduction or a conclusion'
     b=BusinessIdeasChat(init_prompt)
-    print(b._BusinessIdeasChat__database)
+    #print(b._BusinessIdeasChat__database)
     b.create_prompt([2])
-    print(b._BusinessIdeasChat__database)
+    #print(b._BusinessIdeasChat__database)
     b.create_prompt([2,2])
-    print(b._BusinessIdeasChat__database)
+    #print(b._BusinessIdeasChat__database)
     b.create_prompt([2,2,1])
-    print(b._BusinessIdeasChat__database)
+    #print(b._BusinessIdeasChat__database)
     b.create_prompt([1])
-    print(b._BusinessIdeasChat__database)
+    #print(b._BusinessIdeasChat__database)
     b.create_prompt([1,2])
+
+    with open("log.json", "w") as file:
+        json.dump(b._BusinessIdeasChat__database,file, indent=4)
 
 
     

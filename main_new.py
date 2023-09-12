@@ -132,12 +132,14 @@ def main():
 
     load_dotenv()
     openai.api_key=os.getenv('API_KEY')
+    
      
     while True:
         prompt = 'Considering the importance of individual skills, interests, and assets for successful business, how can these elements be best utilized for a business idea generation? My primary skills and competencies: perseverence.I have experience and/or education in: business. My hobbies are: cooking. I have access to: car, internet. My business format preference: online.I would specifically like to target these markets:Germany. I am willing to take low level of risk,My vision for my business in the long term: Own a profitable business. Give me three best business ideas. Write strictly in the format: number. #name of the idea# $the area expert$ - |list in imperative form for the second person| Use only these seperators:#$| do not write an introduction or a conclusion'#create_prompt_2()
         
         global conversation
         conversation.append({"role": "user", "content": prompt})
+        print(conversation)
 
         # Get assistant's response
         response = openai.ChatCompletion.create(
