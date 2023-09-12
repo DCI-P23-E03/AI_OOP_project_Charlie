@@ -1,203 +1,419 @@
 [
-    "1. #Online Culinary Classes# $Cooking Expert$ - |Utilize your cooking passion by creating an online platform where you offer cooking classes specific to German cuisine. Promote your courses through social media and cooking blogs. You may partner with local grocery stores for ingredient-purchasing discounts. Make sure your tutorials are thorough, easy to follow, and unique to attract a wide audience. Eventually, consider creating a subscription model for added revenue.|  \n\n2. #Business Consulting Service# $Business Expert$ - |Offer your extensive business knowledge to start-ups and small businesses in Germany. Provide services such as business planning, strategy design, and market analysis. Meetings and consultations can be conducted online through video conferencing platforms. Also, consider bundling your services into packages based on specific business needs to attract more customers.|  \n\n3. #E-commerce for Kitchen Tools# $Online Retail Expert$ - |Leverage your knowledge of cooking and business by setting up an e-commerce store specializing in kitchen tools. Targeting the German market, you could offer items commonly used in German recipes. Collaborate with manufacturers or wholesalers for better product opportunities. Promote your store through various online channels such as social media, cooking blogs, or email newsletters. Make sure to provide excellent customer service to encourage repeat business.|",
+    "1. #Cooking Class Business# $business consultant$ - |With your skill in cooking and experience in teaching Python, start a cooking class business targeting the youth. Utilize your barn as the venue for classes. Get creative and incorporate unique elements such as \"knife skills\" workshops, competitions, and cooking-related team activities. Generate revenue through class fees, selling cooking tools and merchandise, online classes, and special events.|\n\n2. #Farm-to-table restaurant# $culinary consultant$ - |As a skilled cook with access to a barn, transform your barn into a farm-to-table restaurant. Provide unique dining experiences by serving dishes cooked from locally sourced and organically grown ingredients. You can even grow some ingredients yourself. This kind of restaurant appeals to the youth who are increasingly interested in sustainability and food traceability.|\n\n3. #Football Academy# $sports consultant$ - |Utilize your passion for football to create a Football Academy for the youth. Use the barn as an office or backup indoor training venue. With a low risk-taking ability, you can start small by offering group classes and camps. As your client base expands, consider additional services like personalized coaching and hosting football tournaments.|\n\n",
     {
         "num": "1",
-        "title": "Online Culinary Classes",
-        "expert": "Cooking Expert",
-        "content": "Utilize your cooking passion by creating an online platform where you offer cooking classes specific to German cuisine. Promote your courses through social media and cooking blogs. You may partner with local grocery stores for ingredient-purchasing discounts. Make sure your tutorials are thorough, easy to follow, and unique to attract a wide audience. Eventually, consider creating a subscription model for added revenue.",
-        "prompt": "You are the best Cooking Expert in the whole world, with 20 years experience. I am your client and i want to start Online Culinary Classes in the Germany. Describe in detail and write what is needed to start. No need to mention the current year(2021) in the answer. Write strictly in the format: number. #name of the idea# $the area expert$ - |business action as a single block in imperative form for the second person| Use only these seperators:#$| do not write an introduction or a conclusion",
-        "elaborate": [
-            "1. #Establishing Content# $Cooking Expert$ - |Start by determining what kind of cooking classes you want to offer such as beginner courses, specific cuisines, or advanced techniques. Prepare a comprehensive course plan for each class that includes list of ingredients, step-by-step cooking instructions, and corresponding visuals.|\n\n2. #Creating an Interactive Platform# $Online Platform Expert$ - |Hire a team of web developers to build an interactive platform for your classes. The website should support videos, user registration, payment processing, and user interaction.|\n\n3. #Filming and Production# $Video Production Expert$ - |Invest in good quality equipment for filming your classes or hire a professional team to produce high-quality videos. Ensure that the lighting, sound, and video clarity are top-tier as this will affect the overall student experience.|\n\n4. #Marketing and Promotion# $Marketing Expert$ - |Build a social media presence on platforms popular in Germany to promote your classes. Connect with food bloggers and influencers to help spread the word about your online culinary classes. Also, look into running ads on platforms like Google and Facebook to increase visibility.|\n\n5. #Securing Partnerships# $Partnership Expert$ - |Identify potential business partners such as local grocery stores and kitchen supply stores. Offer mutual promotion deals or discounts for your students who shop at their store.|\n\n6. #Payment and Pricing Structure# $Business Strategy Expert$ - |Implement a secure payment system on your website. Set competitive yet profitable prices for your classes. Consider different pricing plans like per class, monthly subscriptions, or bundle courses.|",
-            {
-                "num": "1",
-                "title": "Establishing Content",
-                "expert": "Cooking Expert",
-                "content": "Start by determining what kind of cooking classes you want to offer such as beginner courses, specific cuisines, or advanced techniques. Prepare a comprehensive course plan for each class that includes list of ingredients, step-by-step cooking instructions, and corresponding visuals."
-            },
-            {
-                "num": "2",
-                "title": "Creating an Interactive Platform",
-                "expert": "Online Platform Expert",
-                "content": "Hire a team of web developers to build an interactive platform for your classes. The website should support videos, user registration, payment processing, and user interaction.",
-                "prompt": "Your current choice of business action is Creating an Interactive Platform. Imagine it's September 2021. you're the best Online Platform Expert in the whole world, with 20 years of experience. I'm your client and i want you to fetch me a detailed report corresponding to this business action using the following information.\n Hire a team of web developers to build an interactive platform for your classes. The website should support videos, user registration, payment processing, and user interaction. \nNo need to mention the current year in the answer.\nWrite strictly in the format: number. #name of the idea# $the area expert$ - |business action as a single block in imperative form for the second person| Use only these seperators:#$| do not write an introduction or a conclusion",
-                "elaborate": [
-                    "1. #Identifying the Right Team# $Human Resource Expert$ - |Search for experienced web developers, particularly those who have worked on similar projects. Look for individuals who have skills in front-end and back-end development, UI/UX design, and experience with relevant programming languages and frameworks. Conduct interviews and select those who align with your vision and budget.|\n\n2. #Functional Requirements# $Web Development Expert$ - |Clearly define the functionalities your platform needs: video uploading and streaming capabilities, secure user registration process, a reliable payment gateway, interactive forum for user interaction, and a responsive design for various devices. Also, consider future scalability in the development process to accommodate growth.|\n\n3. #Platform Design and User Experience# $UX/UI Design Expert$ - |Develop a user-friendly design with easy navigation. The design should be engaging yet simple enough to be used even by non-tech savvy individuals. Ensure the website is visually appealing and represents your culinary class brand image effectively.|\n\n4. #Building and Testing# $Web Development Expert$ - |Instruct your development team to start building the platform according to the prepared specifications and design. Once the primary structures are developed, conduct testing phases to ascertain everything functions as expected. This includes system testing, user acceptance testing, and performance testing.|\n\n5. #Security Measures# $Cybersecurity Expert$ - |Implement secure protocols and measures to protect user information and payment details. Regularly update security features and conduct vulnerability checks to ensure the protection of your user's data.|\n\n6. #Website Launch and Maintenance# $Web Development Expert$ - |Once satisfied with the platform's performance and security measures, proceed with the website launch. Following the launch, ensure your developers provide regular maintenance and updates as needed.|",
-                    {
-                        "num": "1",
-                        "title": "Identifying the Right Team",
-                        "expert": "Human Resource Expert",
-                        "content": "Search for experienced web developers, particularly those who have worked on similar projects. Look for individuals who have skills in front-end and back-end development, UI/UX design, and experience with relevant programming languages and frameworks. Conduct interviews and select those who align with your vision and budget."
-                    },
-                    {
-                        "num": "2",
-                        "title": "Functional Requirements",
-                        "expert": "Web Development Expert",
-                        "content": "Clearly define the functionalities your platform needs: video uploading and streaming capabilities, secure user registration process, a reliable payment gateway, interactive forum for user interaction, and a responsive design for various devices. Also, consider future scalability in the development process to accommodate growth."
-                    },
-                    {
-                        "num": "3",
-                        "title": "Platform Design and User Experience",
-                        "expert": "UX/UI Design Expert",
-                        "content": "Develop a user-friendly design with easy navigation. The design should be engaging yet simple enough to be used even by non-tech savvy individuals. Ensure the website is visually appealing and represents your culinary class brand image effectively."
-                    },
-                    {
-                        "num": "4",
-                        "title": "Building and Testing",
-                        "expert": "Web Development Expert",
-                        "content": "Instruct your development team to start building the platform according to the prepared specifications and design. Once the primary structures are developed, conduct testing phases to ascertain everything functions as expected. This includes system testing, user acceptance testing, and performance testing."
-                    },
-                    {
-                        "num": "5",
-                        "title": "Security Measures",
-                        "expert": "Cybersecurity Expert",
-                        "content": "Implement secure protocols and measures to protect user information and payment details. Regularly update security features and conduct vulnerability checks to ensure the protection of your user's data."
-                    },
-                    {
-                        "num": "6",
-                        "title": "Website Launch and Maintenance",
-                        "expert": "Web Development Expert",
-                        "content": "Once satisfied with the platform's performance and security measures, proceed with the website launch. Following the launch, ensure your developers provide regular maintenance and updates as needed."
-                    }
-                ]
-            },
-            {
-                "num": "3",
-                "title": "Filming and Production",
-                "expert": "Video Production Expert",
-                "content": "Invest in good quality equipment for filming your classes or hire a professional team to produce high-quality videos. Ensure that the lighting, sound, and video clarity are top-tier as this will affect the overall student experience."
-            },
-            {
-                "num": "4",
-                "title": "Marketing and Promotion",
-                "expert": "Marketing Expert",
-                "content": "Build a social media presence on platforms popular in Germany to promote your classes. Connect with food bloggers and influencers to help spread the word about your online culinary classes. Also, look into running ads on platforms like Google and Facebook to increase visibility."
-            },
-            {
-                "num": "5",
-                "title": "Securing Partnerships",
-                "expert": "Partnership Expert",
-                "content": "Identify potential business partners such as local grocery stores and kitchen supply stores. Offer mutual promotion deals or discounts for your students who shop at their store."
-            },
-            {
-                "num": "6",
-                "title": "Payment and Pricing Structure",
-                "expert": "Business Strategy Expert",
-                "content": "Implement a secure payment system on your website. Set competitive yet profitable prices for your classes. Consider different pricing plans like per class, monthly subscriptions, or bundle courses."
-            }
-        ]
+        "title": "Cooking Class Business",
+        "expert": "business consultant",
+        "content": "With your skill in cooking and experience in teaching Python, start a cooking class business targeting the youth. Utilize your barn as the venue for classes. Get creative and incorporate unique elements such as \"knife skills\" workshops, competitions, and cooking-related team activities. Generate revenue through class fees, selling cooking tools and merchandise, online classes, and special events."
     },
     {
         "num": "2",
-        "title": "Business Consulting Service",
-        "expert": "Business Expert",
-        "content": "Offer your extensive business knowledge to start-ups and small businesses in Germany. Provide services such as business planning, strategy design, and market analysis. Meetings and consultations can be conducted online through video conferencing platforms. Also, consider bundling your services into packages based on specific business needs to attract more customers.",
-        "prompt": "You are the best Business Expert in the whole world, with 20 years experience. I am your client and i want to start Business Consulting Service in the Germany. Describe in detail and write what is needed to start. No need to mention the current year(2021) in the answer. Write strictly in the format: number. #name of the idea# $the area expert$ - |business action as a single block in imperative form for the second person| Use only these seperators:#$| do not write an introduction or a conclusion",
+        "title": "Farm-to-table restaurant",
+        "expert": "culinary consultant",
+        "content": "As a skilled cook with access to a barn, transform your barn into a farm-to-table restaurant. Provide unique dining experiences by serving dishes cooked from locally sourced and organically grown ingredients. You can even grow some ingredients yourself. This kind of restaurant appeals to the youth who are increasingly interested in sustainability and food traceability.",
+        "prompt": "You are the best culinary consultant in the whole world, with 25 years experience. I am your client and i want to start Farm-to-table restaurant in Germany. Describe in detail and write what is needed to start. No need to mention the current year in the answer. Write strictly in the format: number. #name of the business action# $expert to address for detailed information$ - |description of the business action as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
         "elaborate": [
-            "1. #Develop your Business Plan# $Business Strategy Expert$ - |Firstly, create your detailed business plan. Define your objectives, target market, and identify your unique selling propositions. Analyse your potential competition in the Germany. Formulate the marketing strategies you will use to attract your target customer base.|\n\n2. #Set up Legal Framework# $Legal Expert$ - |Register your business with the appropriate governmental organizations in Germany. Seek counsel on the best legal structure for your business (e.g., sole proprietorship, partnership, or corporation). Make sure to handle all permits and licenses to operate, and familiarize yourself with the laws and regulations governing business consulting services in Germany to ensure compliance.| \n\n3. #Establish your Online Presence# $Digital Marketing Expert$ - |Build your professional website which will act as your virtual office. Make sure it is user-friendly, provides all necessary information about your consulting services, displays contact details, and, ideally, houses a booking system for consultations. Also, take advantage of social media platforms for promotional purposes.|\n\n4. #Frame Your Service Offerings# $Service Design Expert$ - |Define the range of services you will offer. This could include business model development, operational planning, marketing strategy development, employees training, etc. Package these services to offer different tiers, from basic to premium. You could also consider creating personalized solutions based on individual client needs.|  \n\n5. #Build Partnerships# $Networking Expert$ - |Establish relationships with other businesses, partnerships can provide you with leads, and vice versa. Attend networking events and join online forums to increase your visibility in the business community.| \n\n6. #Customer Management System# $CRM Expert$ - |Implement a customer relationship management (CRM) system to keep track of client details and communication. This will help you maintain professional relations with your clients and keep track of potential leads that may surface.|",
+            "1. #Market Research# $business consultant$ - |Conduct detailed market research to understand the local food scene, demographics, competition, and potential customers' preferences. Identify gaps in the market, popular local ingredients, and farm-to-table trends specific to Germany.|\n\n2. #Business Plan# $business consultant$ - |Create a comprehensive business plan with clear objectives, marketing strategies, budget calculations, and timelines. Include details about the restaurant's theme, style, menu, operations, pricing, sourcing of supplies, marketing, customer service, and growth strategies.|\n\n3. #Property Conversion# $property consultant$ - |Hire an expert to ensure your barn meets the necessary commercial property standards. Engage an architect and a contractor to convert the barn into a restaurant complying with health and safety standards.|\n\n4. #Sourcing Local Producers# $agricultural consultant$ - |Identify and network with local farmers, growers, and suppliers. Ensure they practice sustainable farming and provide high-quality, fresh produce. Create mutually beneficial partnerships that support local agriculture and supply your restaurant with fresh ingredients.|\n\n5. #Develop a Menu# $culinary consultant$ - |Design a menu that showcases local fresh ingredients and German culinary traditions. Update the menu regularly to reflect seasonal produce availability and keep customer interest.|\n\n6. #Staff Hiring and Training# $HR consultant$ - |Hire staff with relevant restaurant experience. Train them on your restaurant's unique concept, standards of service, menu, and the importance of fresh, locally sourced ingredients.|\n\n7. #Restaurant Layout and Design# $interior designer$ - |Engage a designer to create a comfortable and unique restaurant layout and decor that fits the farm-to-table theme and your brand image.|\n\n8. #Launch Marketing Plan# $marketing consultant$ - |Develop a strong marketing strategy to build excitement around your restaurant's opening. Utilize social media, local press, food bloggers, and influencers to promote your restaurant. Plan a soft launch or friends-and-family event before the grand opening.| \n\n9. #Licenses and Permits# $legal consultant$ - |Get all necessary licenses and permits, such as food service license, liquor license, health department permits, business registration, and local zoning permits. Ensure you meet all regulatory requirements in Germany.|",
             {
                 "num": "1",
-                "title": "Develop your Business Plan",
-                "expert": "Business Strategy Expert",
-                "content": "Firstly, create your detailed business plan. Define your objectives, target market, and identify your unique selling propositions. Analyse your potential competition in the Germany. Formulate the marketing strategies you will use to attract your target customer base."
-            },
-            {
-                "num": "2",
-                "title": "Set up Legal Framework",
-                "expert": "Legal Expert",
-                "content": "Register your business with the appropriate governmental organizations in Germany. Seek counsel on the best legal structure for your business (e.g., sole proprietorship, partnership, or corporation). Make sure to handle all permits and licenses to operate, and familiarize yourself with the laws and regulations governing business consulting services in Germany to ensure compliance.",
-                "prompt": "Your current choice of business action is Set up Legal Framework. Imagine it's September 2021. you're the best Legal Expert in the whole world, with 20 years of experience. I'm your client and i want you to fetch me a detailed report corresponding to this business action using the following information.\n Register your business with the appropriate governmental organizations in Germany. Seek counsel on the best legal structure for your business (e.g., sole proprietorship, partnership, or corporation). Make sure to handle all permits and licenses to operate, and familiarize yourself with the laws and regulations governing business consulting services in Germany to ensure compliance. \nNo need to mention the current year in the answer.\nWrite strictly in the format: number. #name of the idea# $the area expert$ - |business action as a single block in imperative form for the second person| Use only these seperators:#$| do not write an introduction or a conclusion",
+                "title": "Market Research",
+                "expert": "business consultant",
+                "content": "Conduct detailed market research to understand the local food scene, demographics, competition, and potential customers' preferences. Identify gaps in the market, popular local ingredients, and farm-to-table trends specific to Germany.",
+                "prompt": "Your current choice of business action is Market Research. Imagine it's September 2021. you're the best business consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nConduct detailed market research to understand the local food scene, demographics, competition, and potential customers' preferences. Identify gaps in the market, popular local ingredients, and farm-to-table trends specific to Germany. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
                 "elaborate": [
-                    "1. #Business Registration# $Legal Expert$ - |Research and identify the appropriate governmental organizations in Germany for business registration. Provide the necessary documentation, pay applicable fees, and complete the registration process. Ensure that you obtain a confirmation of your business registration.|\n\n2. #Legal Structure Decision# $Business Law Expert$ - |Consult with a reliable local lawyer or business advisor who has knowledge of German law to determine the most suitable legal structure for your business, whether that be a sole proprietorship, partnership, or corporation. Weigh the advantages and disadvantages of each structure and make your decision based on your long-term business plans and financial implications.| \n\n3. #Permits and Licenses# $Business Regulatory Expert$ - |Identify and apply for the necessary permits and licenses required to operate a business consulting firm in Germany. This may involve complex processes and fees which can vary based on local, regional, and national regulations. Documentation and approval of all relevant permits and licenses should be obtained prior to starting operations.| \n\n4. #Compliance with Business Consulting Laws and Regulations# $Business Law Expert$ - |Gather comprehensive information on laws and regulations related to business consulting in Germany. This includes data protection laws, contract laws, and intellectual property rights among others. Keep such information accessible and regularly revisit these laws to ensure continuous compliance with all current and updated regulations.|",
+                    "1. #Local Food Scene Analysis# $food and beverage consultant$ - |Gather data on the current food and beverage environment, noting the types of restaurants, popularity of cuisines, successful restaurant models, and overall level of customer interest in food-related experiences.|\n\n2. #Demographics Research# $demographics expert$ - |Analyze the local population in terms of age, income, social habits and eating preferences. Understand the proportion of the population likely to be interested in a farm-to-table restaurant.|\n\n3. #Competitor Analysis# $business analyst$ - |Identify key competitors in the farm-to-table restaurant space in Germany, analyzing their menu, pricing, service quality, sources of ingredients and customer feedback to understand their strengths and weaknesses.|\n\n4. #Customer Preferences Study# $market research expert$ - |Conduct surveys, focus groups and interviews to understand what potential customers would like to see in a farm-to-table restaurant, such as preferred ingredients, menu items, price range, and overall dining experience.|\n\n5. #Market Gap Identification# $business analyst$  - |Identify potential gaps in the market where you could introduce unique features in your farm-to-table restaurant that aren't currently being offered by other restaurants.|\n\n6. #Popular Local Ingredients# $culinary expert$ - |List popular and widely accepted local ingredients that appeal to the average German food lover. These ingredients could make up the core of your restaurant's menu, ensuring wide acceptance of your dishes.|\n\n7. #Farm-to-table Trend Analysis# $food and beverage consultant$ - |Study the farm-to-table trend in Germany. Understand the growing popularity of this trend, customer perception of the concept, successful farm-to-table restaurants, and future growth prospects.|",
                     {
                         "num": "1",
-                        "title": "Business Registration",
-                        "expert": "Legal Expert",
-                        "content": "Research and identify the appropriate governmental organizations in Germany for business registration. Provide the necessary documentation, pay applicable fees, and complete the registration process. Ensure that you obtain a confirmation of your business registration.",
-                        "prompt": "Your current choice of business action is Business Registration. Imagine it's September 2021. you're the best Legal Expert in the whole world, with 20 years of experience. I'm your client and i want you to fetch me a detailed report corresponding to this business action using the following information.\n Research and identify the appropriate governmental organizations in Germany for business registration. Provide the necessary documentation, pay applicable fees, and complete the registration process. Ensure that you obtain a confirmation of your business registration. \nNo need to mention the current year in the answer.\nWrite strictly in the format: number. #name of the idea# $the area expert$ - |business action as a single block in imperative form for the second person| Use only these seperators:#$| do not write an introduction or a conclusion",
-                        "elaborate": [
-                            "1. #Identify Appropriate Governmental Organizations# $Legal Expert$ - |Carry out research to pinpoint the right governmental bodies overseeing business registrations in Germany. This might include local Chambers of Commerce, the Trade Office, or the Tax Office. Obtain the necessary forms and guidelines from their official resources or consultancies.|\n\n2. #Prepare Necessary Documentation# $Legal Documentation Expert$ - |Compile all the required documentation for the registration process. This may include your business plan, proof of identity, evidence of professional qualifications, and other pertinent details. Ensure the information provided is accurate and the documents are in the accepted formats as per the guidelines.|\n\n3. #Paying Applicable Fees# $Legal Financial Expert$ - |Check the specified registration fees with the relevant government organization. Prepare to pay these fees in the given timeframe and through the accepted payment method. Keep a proof of the transaction for future reference.|\n\n4. #Completing Business Registration# $Business Law Expert$ - |Submit your completed application along with all the required documents and paid fees to the appropriate body. Follow any additional steps they may require, such as legal publicity or an inspection of business premises, if applicable.|\n\n5. #Obtaining Confirmation# $Legal Expert$ - |After your registration is processed and approved, make sure you receive a confirmation in written form. This could be a business registration certificate or an extract from the commercial register, which will authenticate your lawful operation as a business consultant in Germany. Keep this document safe for future reference.|",
-                            {
-                                "num": "1",
-                                "title": "Identify Appropriate Governmental Organizations",
-                                "expert": "Legal Expert",
-                                "content": "Carry out research to pinpoint the right governmental bodies overseeing business registrations in Germany. This might include local Chambers of Commerce, the Trade Office, or the Tax Office. Obtain the necessary forms and guidelines from their official resources or consultancies."
-                            },
-                            {
-                                "num": "2",
-                                "title": "Prepare Necessary Documentation",
-                                "expert": "Legal Documentation Expert",
-                                "content": "Compile all the required documentation for the registration process. This may include your business plan, proof of identity, evidence of professional qualifications, and other pertinent details. Ensure the information provided is accurate and the documents are in the accepted formats as per the guidelines."
-                            },
-                            {
-                                "num": "3",
-                                "title": "Paying Applicable Fees",
-                                "expert": "Legal Financial Expert",
-                                "content": "Check the specified registration fees with the relevant government organization. Prepare to pay these fees in the given timeframe and through the accepted payment method. Keep a proof of the transaction for future reference."
-                            },
-                            {
-                                "num": "4",
-                                "title": "Completing Business Registration",
-                                "expert": "Business Law Expert",
-                                "content": "Submit your completed application along with all the required documents and paid fees to the appropriate body. Follow any additional steps they may require, such as legal publicity or an inspection of business premises, if applicable."
-                            },
-                            {
-                                "num": "5",
-                                "title": "Obtaining Confirmation",
-                                "expert": "Legal Expert",
-                                "content": "After your registration is processed and approved, make sure you receive a confirmation in written form. This could be a business registration certificate or an extract from the commercial register, which will authenticate your lawful operation as a business consultant in Germany. Keep this document safe for future reference."
-                            }
-                        ]
+                        "title": "Local Food Scene Analysis",
+                        "expert": "food and beverage consultant",
+                        "content": "Gather data on the current food and beverage environment, noting the types of restaurants, popularity of cuisines, successful restaurant models, and overall level of customer interest in food-related experiences."
                     },
                     {
                         "num": "2",
-                        "title": "Legal Structure Decision",
-                        "expert": "Business Law Expert",
-                        "content": "Consult with a reliable local lawyer or business advisor who has knowledge of German law to determine the most suitable legal structure for your business, whether that be a sole proprietorship, partnership, or corporation. Weigh the advantages and disadvantages of each structure and make your decision based on your long-term business plans and financial implications."
+                        "title": "Demographics Research",
+                        "expert": "demographics expert",
+                        "content": "Analyze the local population in terms of age, income, social habits and eating preferences. Understand the proportion of the population likely to be interested in a farm-to-table restaurant."
                     },
                     {
                         "num": "3",
-                        "title": "Permits and Licenses",
-                        "expert": "Business Regulatory Expert",
-                        "content": "Identify and apply for the necessary permits and licenses required to operate a business consulting firm in Germany. This may involve complex processes and fees which can vary based on local, regional, and national regulations. Documentation and approval of all relevant permits and licenses should be obtained prior to starting operations."
+                        "title": "Competitor Analysis",
+                        "expert": "business analyst",
+                        "content": "Identify key competitors in the farm-to-table restaurant space in Germany, analyzing their menu, pricing, service quality, sources of ingredients and customer feedback to understand their strengths and weaknesses."
                     },
                     {
                         "num": "4",
-                        "title": "Compliance with Business Consulting Laws and Regulations",
-                        "expert": "Business Law Expert",
-                        "content": "Gather comprehensive information on laws and regulations related to business consulting in Germany. This includes data protection laws, contract laws, and intellectual property rights among others. Keep such information accessible and regularly revisit these laws to ensure continuous compliance with all current and updated regulations."
+                        "title": "Customer Preferences Study",
+                        "expert": "market research expert",
+                        "content": "Conduct surveys, focus groups and interviews to understand what potential customers would like to see in a farm-to-table restaurant, such as preferred ingredients, menu items, price range, and overall dining experience."
+                    },
+                    {
+                        "num": "5",
+                        "title": "Market Gap Identification",
+                        "expert": "business analyst",
+                        "content": "Identify potential gaps in the market where you could introduce unique features in your farm-to-table restaurant that aren't currently being offered by other restaurants."
+                    },
+                    {
+                        "num": "6",
+                        "title": "Popular Local Ingredients",
+                        "expert": "culinary expert",
+                        "content": "List popular and widely accepted local ingredients that appeal to the average German food lover. These ingredients could make up the core of your restaurant's menu, ensuring wide acceptance of your dishes."
+                    },
+                    {
+                        "num": "7",
+                        "title": "Farm-to-table Trend Analysis",
+                        "expert": "food and beverage consultant",
+                        "content": "Study the farm-to-table trend in Germany. Understand the growing popularity of this trend, customer perception of the concept, successful farm-to-table restaurants, and future growth prospects."
                     }
                 ]
             },
             {
+                "num": "2",
+                "title": "Business Plan",
+                "expert": "business consultant",
+                "content": "Create a comprehensive business plan with clear objectives, marketing strategies, budget calculations, and timelines. Include details about the restaurant's theme, style, menu, operations, pricing, sourcing of supplies, marketing, customer service, and growth strategies."
+            },
+            {
                 "num": "3",
-                "title": "Establish your Online Presence",
-                "expert": "Digital Marketing Expert",
-                "content": "Build your professional website which will act as your virtual office. Make sure it is user-friendly, provides all necessary information about your consulting services, displays contact details, and, ideally, houses a booking system for consultations. Also, take advantage of social media platforms for promotional purposes."
+                "title": "Property Conversion",
+                "expert": "property consultant",
+                "content": "Hire an expert to ensure your barn meets the necessary commercial property standards. Engage an architect and a contractor to convert the barn into a restaurant complying with health and safety standards.",
+                "prompt": "Your current choice of business action is Property Conversion. Imagine it's September 2021. you're the best property consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nHire an expert to ensure your barn meets the necessary commercial property standards. Engage an architect and a contractor to convert the barn into a restaurant complying with health and safety standards. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                "elaborate": [
+                    "1. #Property Assessment# $structural engineer$ - |Engage a structural engineer to evaluate the barn's current condition. Ensure the structure is sound and can facilitate the necessary changes for a restaurant.|\n\n2. #Code Compliance# $legal consultant$ - |Consult a local codes administration officer to ensure all the planned modifications comply with the building codes and zoning laws specific to your area.|\n\n3. #Hire an Architect and Contractor# $construction consultant$ - |Hire an experienced architect and contractor who have experience in converting barns into commercial venues. Ensure they have good knowledge of the local codes and guidelines.|\n\n4. #Design Layout# $architect$ - |Work closely with the architect to design the layout spreading the dining area, kitchen, restrooms, and storage optimally and aesthetically. The layout should facilitate smooth flow of staff and customers, and also adhere to safety codes.|\n\n5. #Renovation Plan# $contractor$ - |With your contractor, create a detailed renovation plan. This should include timelines, an in-depth budget, and a plan for sourcing necessary materials and labor.|\n\n6. #Plumbing, Heating, and Ventilation# $HVAC/plumbing consultant$ - |Ensure your barn is equipped with effective plumbing, heating, and ventilation systems. Enlist the help of professionals to install or upgrade these systems as required for a restaurant.|\n\n7. #Fire Safety Measures# $fire safety consultant$ - |Implement necessary fire safety measures as per laws. This will include fire exits, extinguishers, alarms, and sprinkler systems. Train your staff on fire safety protocols.|\n\n8. #Electrical Work# $electrical consultant$ - |Get all the necessary electrical work done, including wiring for light fixtures, kitchen equipment, and emergency systems.|\n\n9. #Final Property Inspection# $property inspector$ - |Once all work is completed, get a final inspection done to ensure all changes comply with local codes and regulations. Make any adjustments as recommended by the inspector.|",
+                    {
+                        "num": "1",
+                        "title": "Property Assessment",
+                        "expert": "structural engineer",
+                        "content": "Engage a structural engineer to evaluate the barn's current condition. Ensure the structure is sound and can facilitate the necessary changes for a restaurant."
+                    },
+                    {
+                        "num": "2",
+                        "title": "Code Compliance",
+                        "expert": "legal consultant",
+                        "content": "Consult a local codes administration officer to ensure all the planned modifications comply with the building codes and zoning laws specific to your area."
+                    },
+                    {
+                        "num": "3",
+                        "title": "Hire an Architect and Contractor",
+                        "expert": "construction consultant",
+                        "content": "Hire an experienced architect and contractor who have experience in converting barns into commercial venues. Ensure they have good knowledge of the local codes and guidelines."
+                    },
+                    {
+                        "num": "4",
+                        "title": "Design Layout",
+                        "expert": "architect",
+                        "content": "Work closely with the architect to design the layout spreading the dining area, kitchen, restrooms, and storage optimally and aesthetically. The layout should facilitate smooth flow of staff and customers, and also adhere to safety codes."
+                    },
+                    {
+                        "num": "5",
+                        "title": "Renovation Plan",
+                        "expert": "contractor",
+                        "content": "With your contractor, create a detailed renovation plan. This should include timelines, an in-depth budget, and a plan for sourcing necessary materials and labor."
+                    },
+                    {
+                        "num": "6",
+                        "title": "Plumbing, Heating, and Ventilation",
+                        "expert": "HVAC/plumbing consultant",
+                        "content": "Ensure your barn is equipped with effective plumbing, heating, and ventilation systems. Enlist the help of professionals to install or upgrade these systems as required for a restaurant."
+                    },
+                    {
+                        "num": "7",
+                        "title": "Fire Safety Measures",
+                        "expert": "fire safety consultant",
+                        "content": "Implement necessary fire safety measures as per laws. This will include fire exits, extinguishers, alarms, and sprinkler systems. Train your staff on fire safety protocols."
+                    },
+                    {
+                        "num": "8",
+                        "title": "Electrical Work",
+                        "expert": "electrical consultant",
+                        "content": "Get all the necessary electrical work done, including wiring for light fixtures, kitchen equipment, and emergency systems."
+                    },
+                    {
+                        "num": "9",
+                        "title": "Final Property Inspection",
+                        "expert": "property inspector",
+                        "content": "Once all work is completed, get a final inspection done to ensure all changes comply with local codes and regulations. Make any adjustments as recommended by the inspector."
+                    }
+                ]
             },
             {
                 "num": "4",
-                "title": "Frame Your Service Offerings",
-                "expert": "Service Design Expert",
-                "content": "Define the range of services you will offer. This could include business model development, operational planning, marketing strategy development, employees training, etc. Package these services to offer different tiers, from basic to premium. You could also consider creating personalized solutions based on individual client needs."
+                "title": "Sourcing Local Producers",
+                "expert": "agricultural consultant",
+                "content": "Identify and network with local farmers, growers, and suppliers. Ensure they practice sustainable farming and provide high-quality, fresh produce. Create mutually beneficial partnerships that support local agriculture and supply your restaurant with fresh ingredients."
             },
             {
                 "num": "5",
-                "title": "Build Partnerships",
-                "expert": "Networking Expert",
-                "content": "Establish relationships with other businesses, partnerships can provide you with leads, and vice versa. Attend networking events and join online forums to increase your visibility in the business community."
+                "title": "Develop a Menu",
+                "expert": "culinary consultant",
+                "content": "Design a menu that showcases local fresh ingredients and German culinary traditions. Update the menu regularly to reflect seasonal produce availability and keep customer interest."
             },
             {
                 "num": "6",
-                "title": "Customer Management System",
-                "expert": "CRM Expert",
-                "content": "Implement a customer relationship management (CRM) system to keep track of client details and communication. This will help you maintain professional relations with your clients and keep track of potential leads that may surface."
+                "title": "Staff Hiring and Training",
+                "expert": "HR consultant",
+                "content": "Hire staff with relevant restaurant experience. Train them on your restaurant's unique concept, standards of service, menu, and the importance of fresh, locally sourced ingredients."
+            },
+            {
+                "num": "7",
+                "title": "Restaurant Layout and Design",
+                "expert": "interior designer",
+                "content": "Engage a designer to create a comfortable and unique restaurant layout and decor that fits the farm-to-table theme and your brand image."
+            },
+            {
+                "num": "8",
+                "title": "Launch Marketing Plan",
+                "expert": "marketing consultant",
+                "content": "Develop a strong marketing strategy to build excitement around your restaurant's opening. Utilize social media, local press, food bloggers, and influencers to promote your restaurant. Plan a soft launch or friends-and-family event before the grand opening."
+            },
+            {
+                "num": "9",
+                "title": "Licenses and Permits",
+                "expert": "legal consultant",
+                "content": "Get all necessary licenses and permits, such as food service license, liquor license, health department permits, business registration, and local zoning permits. Ensure you meet all regulatory requirements in Germany.",
+                "prompt": "Your current choice of business action is Licenses and Permits. Imagine it's September 2021. you're the best legal consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nGet all necessary licenses and permits, such as food service license, liquor license, health department permits, business registration, and local zoning permits. Ensure you meet all regulatory requirements in Germany. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                "elaborate": [
+                    "1. #Business Registration# $business registration service$ - |Register your restaurant business with the local Chamber of Commerce or Handelsregister in Germany. Choose the business entity type, such as limited liability or sole proprietorship.|\n\n2. #Obtain Food Service License# $health department$ - |Apply for the food service license from the local health department. Adhere to all requirements including food safety regulations for food preparation, storage, handling, and display.|\n\n3. #Health and Safety Inspections# $health inspection agency$ - |Arrange for periodic health and safety inspections of your restaurant, including food hygiene, to comply with the Health Protection and Food Laws in Germany.|\n\n4. #Liquor License Application# $liquor control board$ - |If you plan to serve alcohol, apply for a liquor license from the local liquor control board. This usually mandates the owner and staff to undergo training on responsible alcohol service.|\n\n5. #Obtain Zoning Permit# $local zoning department$ - |Get a zoning permit from local town or city officials. This certifies that your restaurant's location is in an area designated for your type of business.|\n\n6. #Fire Safety Regulations# $fire department$ - |Comply with fire safety regulations mandated by the local fire department. This includes installation of fire extinguishers, emergency exits, fire suppression system in kitchen, etc.|\n\n7. #Music License# $performing rights organization$ - |If you'll be playing music in your restaurant, acquire the necessary licenses from music copyright organizations, like GEMA in Germany, to legally play copyrighted music.|\n\n8. #Tax Registration# $tax consultant$ - |Register your restaurant for Value Added Tax (VAT) or Umsatzsteuer with the German tax office or Finanzamt. |\n\n9. #Restaurant Liability Insurance# $insurance agency$ - |Set up restaurant liability insurance to protect your business from various liability claims such as food-borne illnesses, injuries, or damages related to the consumption of alcohol.|",
+                    {
+                        "num": "1",
+                        "title": "Business Registration",
+                        "expert": "business registration service",
+                        "content": "Register your restaurant business with the local Chamber of Commerce or Handelsregister in Germany. Choose the business entity type, such as limited liability or sole proprietorship."
+                    },
+                    {
+                        "num": "2",
+                        "title": "Obtain Food Service License",
+                        "expert": "health department",
+                        "content": "Apply for the food service license from the local health department. Adhere to all requirements including food safety regulations for food preparation, storage, handling, and display."
+                    },
+                    {
+                        "num": "3",
+                        "title": "Health and Safety Inspections",
+                        "expert": "health inspection agency",
+                        "content": "Arrange for periodic health and safety inspections of your restaurant, including food hygiene, to comply with the Health Protection and Food Laws in Germany."
+                    },
+                    {
+                        "num": "4",
+                        "title": "Liquor License Application",
+                        "expert": "liquor control board",
+                        "content": "If you plan to serve alcohol, apply for a liquor license from the local liquor control board. This usually mandates the owner and staff to undergo training on responsible alcohol service."
+                    },
+                    {
+                        "num": "5",
+                        "title": "Obtain Zoning Permit",
+                        "expert": "local zoning department",
+                        "content": "Get a zoning permit from local town or city officials. This certifies that your restaurant's location is in an area designated for your type of business."
+                    },
+                    {
+                        "num": "6",
+                        "title": "Fire Safety Regulations",
+                        "expert": "fire department",
+                        "content": "Comply with fire safety regulations mandated by the local fire department. This includes installation of fire extinguishers, emergency exits, fire suppression system in kitchen, etc."
+                    },
+                    {
+                        "num": "7",
+                        "title": "Music License",
+                        "expert": "performing rights organization",
+                        "content": "If you'll be playing music in your restaurant, acquire the necessary licenses from music copyright organizations, like GEMA in Germany, to legally play copyrighted music."
+                    },
+                    {
+                        "num": "8",
+                        "title": "Tax Registration",
+                        "expert": "tax consultant",
+                        "content": "Register your restaurant for Value Added Tax (VAT) or Umsatzsteuer with the German tax office or Finanzamt."
+                    },
+                    {
+                        "num": "9",
+                        "title": "Restaurant Liability Insurance",
+                        "expert": "insurance agency",
+                        "content": "Set up restaurant liability insurance to protect your business from various liability claims such as food-borne illnesses, injuries, or damages related to the consumption of alcohol."
+                    }
+                ]
             }
         ]
     },
     {
         "num": "3",
-        "title": "E-commerce for Kitchen Tools",
-        "expert": "Online Retail Expert",
-        "content": "Leverage your knowledge of cooking and business by setting up an e-commerce store specializing in kitchen tools. Targeting the German market, you could offer items commonly used in German recipes. Collaborate with manufacturers or wholesalers for better product opportunities. Promote your store through various online channels such as social media, cooking blogs, or email newsletters. Make sure to provide excellent customer service to encourage repeat business."
+        "title": "Football Academy",
+        "expert": "sports consultant",
+        "content": "Utilize your passion for football to create a Football Academy for the youth. Use the barn as an office or backup indoor training venue. With a low risk-taking ability, you can start small by offering group classes and camps. As your client base expands, consider additional services like personalized coaching and hosting football tournaments.",
+        "prompt": "You are the best sports consultant in the whole world, with 25 years experience. I am your client and i want to start Football Academy in Germany. Describe in detail and write what is needed to start. No need to mention the current year in the answer. Write strictly in the format: number. #name of the business action# $expert to address for detailed information$ - |description of the business action as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+        "elaborate": [
+            "1. #Business Plan Development# $business consultant$ - |Start by developing a comprehensive business plan. Your plan should include a clear mission and vision, your target demographic, marketing and sales strategies, a detailed financial forecast, and any potential challenges and your plans to overcome them.| \n\n2. #Regulatory Compliance# $legal consultant$ - |Reach out to a legal expert who specializes in sports-related businesses in Germany. Register your academy in accordance with local laws and regulations, and ensure you have the relevant permissions, licenses, and insurances.|\n\n3. #Acquire Venue and Equipment# $sports facilities consultant$ - |Identify and acquire a location for the academy. Your venue should have enough space for all your training needs. Additionally, procure the necessary football equipment and training aids.| \n\n4. #Hiring Qualified Staff# $human resources consultant$ - |Recruit experienced coaches, trainers, administrative staff, and other personnel. Make sure they meet qualifications, safety requirements, and share your vision for the academy.| \n\n5. #Marketing and Promotion# $marketing consultant$ - |Develop a marketing strategy to generate interest and attract students. Consider various channels such as local advertising, online promotion, school partnerships, open house events, or offering introductory discounts.| \n\n6. #Partnership Building# $strategic alliances consultant$ - |Engage with local schools, community organizations and sports leagues. Forming strategic partnerships can help to increase visibility, gain credibility and attract prospective trainees.|  \n\n7. #Program Development# $sports education consultant$ - |Design a robust and engaging training program for varying age groups and skill levels. Programs should focus on improving fitness, teaching football skills, promoting teamwork, and fostering a love for the sport.|",
+            {
+                "num": "1",
+                "title": "Business Plan Development",
+                "expert": "business consultant",
+                "content": "Start by developing a comprehensive business plan. Your plan should include a clear mission and vision, your target demographic, marketing and sales strategies, a detailed financial forecast, and any potential challenges and your plans to overcome them.",
+                "prompt": "Your current choice of business action is Business Plan Development. Imagine it's September 2021. you're the best business consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nStart by developing a comprehensive business plan. Your plan should include a clear mission and vision, your target demographic, marketing and sales strategies, a detailed financial forecast, and any potential challenges and your plans to overcome them. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                "elaborate": [
+                    "1. #Mission and Vision Statement# $strategy consultant$ - |Articulate the core purpose of your academy and the future you aspire to create. Ensure the vision is inspiring and aligns with your personal values. The mission should denote how you'll achieve this vision in a concrete manner.| \n\n2. #Target Demographic Identification# $market research consultant$ - |Identify and describe your target demographic. It should describe the youth group you're aiming to reach in Germany, including age, socio-economic status, and geographic location. Understanding your market is crucial for designing effective marketing and sales strategies, and for setting up your academy in a location that will be convenient for your target demographic.| \n\n3. #Marketing and Sales Strategies# $marketing consultant$ - |Develop comprehensive strategies to attract and retain your target market. Consider various marketing channels including online platforms, partnerships, events, and media presence. Sales strategies might include initial promotions, referral programs, and value-added offerings.| \n\n4. #Detailed Financial Forecast# $financial consultant$ - |Prepare detailed financial projections showing anticipated expenses and revenues for your academy. Ensure you include start-up costs, ongoing operation expenses, and potential sources of income. Forecast on a monthly basis for at least the first year, and annually for the subsequent two to five years.| \n\n5. #Potential Challenges and Solutions# $risk management consultant$ - |Detail the potential challenges your academy may face. This may include competition, market trends, potential operational issues, risk of injuries, and other factors. Develop comprehensive contingency plans to manage these risks, maintain resilience and ensure the sustainability of your academy.|\n",
+                    {
+                        "num": "1",
+                        "title": "Mission and Vision Statement",
+                        "expert": "strategy consultant",
+                        "content": "Articulate the core purpose of your academy and the future you aspire to create. Ensure the vision is inspiring and aligns with your personal values. The mission should denote how you'll achieve this vision in a concrete manner."
+                    },
+                    {
+                        "num": "2",
+                        "title": "Target Demographic Identification",
+                        "expert": "market research consultant",
+                        "content": "Identify and describe your target demographic. It should describe the youth group you're aiming to reach in Germany, including age, socio-economic status, and geographic location. Understanding your market is crucial for designing effective marketing and sales strategies, and for setting up your academy in a location that will be convenient for your target demographic."
+                    },
+                    {
+                        "num": "3",
+                        "title": "Marketing and Sales Strategies",
+                        "expert": "marketing consultant",
+                        "content": "Develop comprehensive strategies to attract and retain your target market. Consider various marketing channels including online platforms, partnerships, events, and media presence. Sales strategies might include initial promotions, referral programs, and value-added offerings."
+                    },
+                    {
+                        "num": "4",
+                        "title": "Detailed Financial Forecast",
+                        "expert": "financial consultant",
+                        "content": "Prepare detailed financial projections showing anticipated expenses and revenues for your academy. Ensure you include start-up costs, ongoing operation expenses, and potential sources of income. Forecast on a monthly basis for at least the first year, and annually for the subsequent two to five years."
+                    },
+                    {
+                        "num": "5",
+                        "title": "Potential Challenges and Solutions",
+                        "expert": "risk management consultant",
+                        "content": "Detail the potential challenges your academy may face. This may include competition, market trends, potential operational issues, risk of injuries, and other factors. Develop comprehensive contingency plans to manage these risks, maintain resilience and ensure the sustainability of your academy."
+                    }
+                ]
+            },
+            {
+                "num": "2",
+                "title": "Regulatory Compliance",
+                "expert": "legal consultant",
+                "content": "Reach out to a legal expert who specializes in sports-related businesses in Germany. Register your academy in accordance with local laws and regulations, and ensure you have the relevant permissions, licenses, and insurances."
+            },
+            {
+                "num": "3",
+                "title": "Acquire Venue and Equipment",
+                "expert": "sports facilities consultant",
+                "content": "Identify and acquire a location for the academy. Your venue should have enough space for all your training needs. Additionally, procure the necessary football equipment and training aids."
+            },
+            {
+                "num": "4",
+                "title": "Hiring Qualified Staff",
+                "expert": "human resources consultant",
+                "content": "Recruit experienced coaches, trainers, administrative staff, and other personnel. Make sure they meet qualifications, safety requirements, and share your vision for the academy.",
+                "prompt": "Your current choice of business action is Hiring Qualified Staff. Imagine it's September 2021. you're the best human resources consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nRecruit experienced coaches, trainers, administrative staff, and other personnel. Make sure they meet qualifications, safety requirements, and share your vision for the academy. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                "elaborate": [
+                    "1. #Defining Job Roles# $job analyst$ - |Define clear job descriptions for each of the roles within your academy. These should include the qualifications, experience, and specific skills needed for each position, including coaches, trainers, and administrative staff.|\n\n2. #Develop Recruitment Strategies# $recruitment specialist$ - |Develop a strategic plan for recruitment. This could include advertisements in relevant publications or websites, partnering with sport-focused employment agencies or recruiting from local universities.|\n\n3. #Establishing Qualification Standards# $certification consultant$ - |Ensure that each potential candidate meet all necessary certification and qualification standards required to coach or train youth in football.|\n\n4. #Conducting Interviews# $interview consultant$ - |Plan and conduct structured interviews. During these sessions, gauge not just the candidates' qualifications but also their alignment with your academy's vision and values.|\n\n5. #Implementing Safety Checks# $safety consultant$ - |All staff members should undergo extensive safety checks, given they will be working with children. This would involve background checks, verifying qualifications and references.|\n\n6. #Employee Induction# $onboarding consultant$ - |Once staff members are recruited, conduct an induction program. This program should acclimatize them with academy's rules, safety guidelines, and organizational culture.|\n\n7. #Periodic Training and Development# $training consultant$ - |Implement a comprehensive ongoing training program for staff to ensure they are up-to-date with the latest coaching techniques, safety protocols and understand the academy's evolving vision.|",
+                    {
+                        "num": "1",
+                        "title": "Defining Job Roles",
+                        "expert": "job analyst",
+                        "content": "Define clear job descriptions for each of the roles within your academy. These should include the qualifications, experience, and specific skills needed for each position, including coaches, trainers, and administrative staff."
+                    },
+                    {
+                        "num": "2",
+                        "title": "Develop Recruitment Strategies",
+                        "expert": "recruitment specialist",
+                        "content": "Develop a strategic plan for recruitment. This could include advertisements in relevant publications or websites, partnering with sport-focused employment agencies or recruiting from local universities."
+                    },
+                    {
+                        "num": "3",
+                        "title": "Establishing Qualification Standards",
+                        "expert": "certification consultant",
+                        "content": "Ensure that each potential candidate meet all necessary certification and qualification standards required to coach or train youth in football."
+                    },
+                    {
+                        "num": "4",
+                        "title": "Conducting Interviews",
+                        "expert": "interview consultant",
+                        "content": "Plan and conduct structured interviews. During these sessions, gauge not just the candidates' qualifications but also their alignment with your academy's vision and values."
+                    },
+                    {
+                        "num": "5",
+                        "title": "Implementing Safety Checks",
+                        "expert": "safety consultant",
+                        "content": "All staff members should undergo extensive safety checks, given they will be working with children. This would involve background checks, verifying qualifications and references."
+                    },
+                    {
+                        "num": "6",
+                        "title": "Employee Induction",
+                        "expert": "onboarding consultant",
+                        "content": "Once staff members are recruited, conduct an induction program. This program should acclimatize them with academy's rules, safety guidelines, and organizational culture."
+                    },
+                    {
+                        "num": "7",
+                        "title": "Periodic Training and Development",
+                        "expert": "training consultant",
+                        "content": "Implement a comprehensive ongoing training program for staff to ensure they are up-to-date with the latest coaching techniques, safety protocols and understand the academy's evolving vision."
+                    }
+                ]
+            },
+            {
+                "num": "5",
+                "title": "Marketing and Promotion",
+                "expert": "marketing consultant",
+                "content": "Develop a marketing strategy to generate interest and attract students. Consider various channels such as local advertising, online promotion, school partnerships, open house events, or offering introductory discounts.",
+                "prompt": "Your current choice of business action is Marketing and Promotion. Imagine it's September 2021. you're the best marketing consultant in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \nDevelop a marketing strategy to generate interest and attract students. Consider various channels such as local advertising, online promotion, school partnerships, open house events, or offering introductory discounts. \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion",
+                "elaborate": [
+                    "1. #Local Advertising Campaigns# $advertising consultant$ - |Launch strategic advertising campaigns in local newspapers, radio, and television channels that target your demographic. Encapsulate the unique features of your academy and the benefits of enrolling.|\n\n2. #Online Promotion# $digital marketing expert$ - |Create an engaging website and active social media presence on platforms like Facebook, Instagram, and Twitter. Regularly update these platforms with appealing content related to your academy and football in general to attract and retain potential customers.| \n\n3. #School Partnerships# $community outreach coordinator$ - |Establish partnerships with local schools. Offer services such as after-school football classes, school football clinics, or free workshops. In exchange, ask them to promote your academy among students and parents.|\n\n4. #Open House Events# $event planner$ - |Organize open house events at your academy. Allow potential students and their parents to tour the facilities, meet the coaches, and participate in trial sessions. Use this event as an opportunity to showcase your academy's strengths and engage with potential customers.| \n\n5. #Introductory Discounts# $pricing strategist$ - |Develop introductory discounts for the first batch of students, or those who sign up during the open house. These incentives can attract early adopters and generate buzz around your academy.| \n\n6. #SEO and Search Advertising# $SEO expert$ - |Optimize your website to improve search engine rankings and visibility. Also invest in paid search advertising to target prospective customers seeking football academies in your area.|\n\n7. #Email Marketing# $email marketing consultant$ - |Build an email list to send out newsletters, updates, discounts, and other meaningful content. Use this tool for keeping your academy in the minds of potential and current customers.| \n\n8. #Customer Referrals# $referral marketing specialist$ - |Implement a referral program where current students or their parents can refer friends to your academy in return for incentives such as discounted classes or free merchandise.|",
+                    {
+                        "num": "1",
+                        "title": "Local Advertising Campaigns",
+                        "expert": "advertising consultant",
+                        "content": "Launch strategic advertising campaigns in local newspapers, radio, and television channels that target your demographic. Encapsulate the unique features of your academy and the benefits of enrolling."
+                    },
+                    {
+                        "num": "2",
+                        "title": "Online Promotion",
+                        "expert": "digital marketing expert",
+                        "content": "Create an engaging website and active social media presence on platforms like Facebook, Instagram, and Twitter. Regularly update these platforms with appealing content related to your academy and football in general to attract and retain potential customers."
+                    },
+                    {
+                        "num": "3",
+                        "title": "School Partnerships",
+                        "expert": "community outreach coordinator",
+                        "content": "Establish partnerships with local schools. Offer services such as after-school football classes, school football clinics, or free workshops. In exchange, ask them to promote your academy among students and parents."
+                    },
+                    {
+                        "num": "4",
+                        "title": "Open House Events",
+                        "expert": "event planner",
+                        "content": "Organize open house events at your academy. Allow potential students and their parents to tour the facilities, meet the coaches, and participate in trial sessions. Use this event as an opportunity to showcase your academy's strengths and engage with potential customers."
+                    },
+                    {
+                        "num": "5",
+                        "title": "Introductory Discounts",
+                        "expert": "pricing strategist",
+                        "content": "Develop introductory discounts for the first batch of students, or those who sign up during the open house. These incentives can attract early adopters and generate buzz around your academy."
+                    },
+                    {
+                        "num": "6",
+                        "title": "SEO and Search Advertising",
+                        "expert": "SEO expert",
+                        "content": "Optimize your website to improve search engine rankings and visibility. Also invest in paid search advertising to target prospective customers seeking football academies in your area."
+                    },
+                    {
+                        "num": "7",
+                        "title": "Email Marketing",
+                        "expert": "email marketing consultant",
+                        "content": "Build an email list to send out newsletters, updates, discounts, and other meaningful content. Use this tool for keeping your academy in the minds of potential and current customers."
+                    },
+                    {
+                        "num": "8",
+                        "title": "Customer Referrals",
+                        "expert": "referral marketing specialist",
+                        "content": "Implement a referral program where current students or their parents can refer friends to your academy in return for incentives such as discounted classes or free merchandise."
+                    }
+                ]
+            },
+            {
+                "num": "6",
+                "title": "Partnership Building",
+                "expert": "strategic alliances consultant",
+                "content": "Engage with local schools, community organizations and sports leagues. Forming strategic partnerships can help to increase visibility, gain credibility and attract prospective trainees."
+            },
+            {
+                "num": "7",
+                "title": "Program Development",
+                "expert": "sports education consultant",
+                "content": "Design a robust and engaging training program for varying age groups and skill levels. Programs should focus on improving fitness, teaching football skills, promoting teamwork, and fostering a love for the sport."
+            }
+        ]
     }
 ]

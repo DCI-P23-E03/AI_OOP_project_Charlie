@@ -4,6 +4,7 @@ from termcolor import colored
 
 import getch
 
+
 class Menu(ABC):
 
     MAX_HORIZONTAL_SIZE=72
@@ -25,7 +26,7 @@ class Menu(ABC):
         pass
         
     def print_menu(self):
-        #x("clear")
+        x("clear")
         print(self._menu)
 
     def _access_menu_item(self,lst):

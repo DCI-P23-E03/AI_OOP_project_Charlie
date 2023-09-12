@@ -1,6 +1,13 @@
 import openai # pip install openai
 from dotenv import load_dotenv
 import os
+import json
+import getch
+
+from termcolor import colored
+from os import system as x
+from menu import VerticalMenu
+from chat import BusinessIdeasChat
 
 
 
@@ -39,6 +46,29 @@ def create_prompt():
 
     return prompt
 
+class ChatInMenu(BusinessIdeasChat,VerticalMenu):
+    def __init__(self, initial_prompt):
+        super().__init__(initial_prompt)
+        VerticalMenu.__init__(self,self._list_of_menu_items,25)
+
+    def execute(self, *args):
+        x("clear")
+        for i in self.selected:
+            x_coords=self.coords[:-1]
+            x_coords.append(i)
+            print(colored(f"Elaborating on {self._access_menu_item(x_coords)[0]}.","blue"))
+            self.list_of_menu_items=self.create_prompt(x_coords)
+            for item in self._access_database(x_coords)[1:]:
+                print(item["num"]+". "+colored(item["title"],"green")+"\n"+item["content"])
+        print("Press any key to return to menu or 'x' to stop and generate report")
+        mov=getch.getch()
+        self.selected.clear()
+        return mov
+    
+    def navigate_menu(self):
+        super().navigate_menu()
+        with open("log.json", "w") as file:
+            json.dump(self._BusinessIdeasChat__database,file, indent=4)
 
 def main():
     # Set your OpenAI API key
@@ -47,39 +77,30 @@ def main():
     load_dotenv()
     openai.api_key=os.getenv('API_KEY')
     
-    # Initial conversation setup
-    conversation = [
-        {"role": "system", "content": "You are one of the best business consultants with 25 years of experience and in depth knowledge of business, markets, strategies, start-ups etc. Your answers are in the form of a list with each item starting with a number followed by a dot. You always stay in the role."},                # SYSTEM ROLE
-    ]
+    
 
     prompt=create_prompt()
+    """prompt="Considering the importance of individual skills, interests, and assets for 
+        successful business, how can these elements be best utilized for idea generation?
 
-    while True:
-        # User input
-        #prompt = input("User: ")                                                     # USER INPUT
-        #if prompt.lower() == "exit":
-        #    break
-        print("\n")
-        conversation.append({"role": "user", "content": prompt})
+        My primary skills and competencies: cooking
+        \nI have experience and/or education in: 
+        teaching python \nMy hobbies are: 
+        football \nI have access to: a barn and a knife 
+        \nMy business format preference: offline
+        \nI would specifically like to target these markets: youth
+        \nI am willing to take low level of risk,
+        \nMy vision for my business in the long term: get rich\n
+        Give me please three best business ideas.
+        """
 
-        # Get assistant's response
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
-            messages=conversation
-        )
-        #print("RAW RESPONSE",response)
-        assistant_message = response['choices'][0]['message']['content']
-        
-        # Add the assistant's message to the conversation and print it
-        conversation.append({"role": "assistant", "content": assistant_message})
-        print(f"Assistant: {assistant_message}\n")
-        print(f"Tokens used: {response['usage']['total_tokens']}\n")
-        #print(response)
-        #print(conversation)
-        prompt = input("User: ")   
-        
-        if prompt.lower() == "exit":
-            break
+
+    b=ChatInMenu(prompt)
+    print(b._BusinessIdeasChat__database[0])
+    getch.getch()
+    
+    b.navigate_menu()
+    
 
 if __name__ == "__main__":
     main()
