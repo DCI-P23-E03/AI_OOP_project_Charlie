@@ -51,9 +51,9 @@ def create_prompt():
 
 class ChatInMenu(BusinessIdeasChat,VerticalMenu):
     def __init__(self, initial_prompt):
-        print("\n Generating 3 business ideas for you...")
+        print("\n"+colored("Generating 3 business ideas for you...","blue"))
         super().__init__(initial_prompt)
-        self.menu_title="Use "+colored("a s w", "red")+" navigate, "+colored("f","green")+" to select or unselect, "+colored("d","blue")+" to open or to execute, "+colored("x","red")+" to create report and exit."
+        self.menu_title=colored("IdeaAlchemy: Craft Your Success","light_yellow",attrs=["bold"])+"\n\nUse "+colored("a s w", "red")+" navigate, "+colored("f","green")+" to select or unselect, "+colored("d","blue")+" to open or to execute, "+colored("x","red")+" to create report and exit."
         self._list_of_menu_items[0]=self.menu_title
         VerticalMenu.__init__(self,self._list_of_menu_items,25)
 
@@ -86,6 +86,7 @@ class ChatInMenu(BusinessIdeasChat,VerticalMenu):
             if ans.lower()=="y":
                 to_email = input('Enter your valid email id: ')
                 send_email("Your businessPDF is attached", to_email, "report.pdf")
+                break
             if ans.lower()=="n":
                 break
 def main():

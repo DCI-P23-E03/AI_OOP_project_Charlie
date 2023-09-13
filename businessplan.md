@@ -1,4 +1,4 @@
-# Idea_1: Online Cooking Class
+#Online Cooking Class
 
 Identify and define your target audience in Germany. Create a business plan that outlines your mission, offerings, and pricing structure. Develop a website and use social media platforms to promote your online cooking classes. Make sure to build a professional kitchen setup for your video content. Invest in high-quality video and audio equipment to ensure your classes are easy to follow
 
@@ -39,7 +39,7 @@ Identify and define your target audience in Germany. Create a business plan that
 6. **Legalities and Regulations:**
     * Ensure you meet all legal requirements for starting an online business in Germany, including registering your business and understanding tax obligations
 
-# Idea_2: E-commerce Kitchen Tools Store
+#E-commerce Kitchen Tools Store
 
 Conduct market research to determine which kitchen tools are in demand in Germany. Look for reliable suppliers of these products. Create an user-friendly e-commerce website that offers secure transactions. Invest in marketing initiatives to increase your customer base. Provide excellent customer service to retain your existing customers
 
