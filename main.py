@@ -80,7 +80,13 @@ class ChatInMenu(BusinessIdeasChat,VerticalMenu):
         with open("report.md", "r") as file:
             md_content = file.read()
             md_to_pdf(md_content, "report.pdf")
-
+        print("Do you want this report sent to your e-mail")
+        while True:
+            ans=getch.getch()
+            if ans.lower()=="y":
+                pass
+            if ans.lower()=="n":
+                break
 
 def main():
     # Set your OpenAI API key

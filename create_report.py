@@ -12,7 +12,7 @@ def create_report_as_md_file(Chat_database, businessplan):
             data= Chat_database[i]
             if 'elaborate' in data:
 
-                md_file.write(f"# Idea_{i}: {data['title']}\n\n")
+                md_file.write(f"#{data['title']}\n\n")
                 md_file.write(f"{data['content']}\n\n")
             
                 dict_list1 = [item for item in data['elaborate'] if isinstance(item,dict)]
