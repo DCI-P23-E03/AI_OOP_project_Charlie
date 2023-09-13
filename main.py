@@ -21,6 +21,7 @@ def create_prompt():
     markets=input("Are there specific markets or audiences you would like to target?: ")
     level_risk=input("What level of risk are you willing to take? (e.g., high, medium, low): ")
     plans=input("What is your long-term plan or vision for the business?: ")
+    country=input("Which country do you plan to operate in?: ")
 
     prompt=(
         """Considering the importance of individual skills, interests, and assets for 
@@ -42,16 +43,17 @@ def create_prompt():
         +f"\nI am willing to take {level_risk} level of risk,"
         +"My vision for my business in the long term: "
         +plans
-        +"Give me please three best business ideas."
+        +f"\nI plan to operate in {country}."
+        +"\nGive me please three best business ideas."
     )
 
     return prompt
 
 class ChatInMenu(BusinessIdeasChat,VerticalMenu):
     def __init__(self, initial_prompt):
-        
+        print("\n Generating 3 business ideas for you...")
         super().__init__(initial_prompt)
-        self.menu_title="Use "+colored("a s w", "red")+" navigate, "+colored("f","green")+" to select, "+colored("d","blue")+" to open or to execute."
+        self.menu_title="Use "+colored("a s w", "red")+" navigate, "+colored("f","green")+" to select or unselect, "+colored("d","blue")+" to open or to execute, "+colored("x","red")+" to create report and exit."
         self._list_of_menu_items[0]=self.menu_title
         VerticalMenu.__init__(self,self._list_of_menu_items,25)
 
@@ -60,11 +62,11 @@ class ChatInMenu(BusinessIdeasChat,VerticalMenu):
         for i in self.selected:
             x_coords=self.coords[:-1]
             x_coords.append(i)
-            print(colored(f"Elaborating on {self._access_menu_item(x_coords)[0]}.","blue"))
+            print(colored(f"Elaborating on {self._access_menu_item(x_coords)[0]}...","blue"))
             self.list_of_menu_items=self.create_prompt(x_coords)
             for item in self._access_database(x_coords)[1:]:
                 print(item["num"]+". "+colored(item["title"],"green")+"\n"+item["content"])
-        print("Press any key to return to menu or 'x' to stop and generate report")
+        print("\nPress any key to return to menu or "+colored('x','red')+" to stop and generate report")
         mov=getch.getch()
         self.selected.clear()
         return mov
