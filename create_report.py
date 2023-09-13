@@ -53,7 +53,7 @@ def create_report_as_md_file(Chat_database, businessplan):
 
 
 
-create_report_as_md_file(Chat_database, 'businessplan.md')
+
 
 def md_to_pdf(md_content, output_file):
     # Convert Markdown to HTML
@@ -62,9 +62,7 @@ def md_to_pdf(md_content, output_file):
     # Convert HTML to PDF
     pdfkit.from_string(html_content, output_file)
 
-with open("businessplan.md", "r") as file:
-    md_content = file.read()
-md_to_pdf(md_content, "businessplan.pdf")
+
 
 
 def send_email(subject, to_email, attach_path):
@@ -97,3 +95,9 @@ def send_email(subject, to_email, attach_path):
     
 
 #send_email("Your businessPDF is attached", 'email', "report.pdf")
+if __name__ == "__main__":
+    create_report_as_md_file(Chat_database, 'businessplan.md')
+
+    with open("businessplan.md", "r") as file:
+        md_content = file.read()
+    md_to_pdf(md_content, "businessplan.pdf")
