@@ -8,7 +8,7 @@ from termcolor import colored
 from os import system as x
 from menu import VerticalMenu
 from chat import BusinessIdeasChat
-from create_report import create_report_as_md_file, md_to_pdf
+from create_report import create_report_as_md_file, md_to_pdf,send_email
 
 
 
@@ -80,14 +80,14 @@ class ChatInMenu(BusinessIdeasChat,VerticalMenu):
         with open("report.md", "r") as file:
             md_content = file.read()
             md_to_pdf(md_content, "report.pdf")
-        print("Do you want this report sent to your e-mail")
+        print("Do you want this report sent to your e-mail(y/n)?")
         while True:
             ans=getch.getch()
             if ans.lower()=="y":
-                pass
+                to_email = input('Enter your valid email id: ')
+                send_email("Your businessPDF is attached", to_email, "report.pdf")
             if ans.lower()=="n":
                 break
-
 def main():
     # Set your OpenAI API key
     #openai.api_key = ""
@@ -98,19 +98,7 @@ def main():
     
     x("clear")
     prompt=create_prompt()
-    """prompt="Considering the importance of individual skills, interests, and assets for 
-        successful business, how can these elements be best utilized for idea generation?
-
-        My primary skills and competencies: cooking
-        \nI have experience and/or education in: 
-        teaching python \nMy hobbies are: 
-        football \nI have access to: a barn and a knife 
-        \nMy business format preference: offline
-        \nI would specifically like to target these markets: youth
-        \nI am willing to take low level of risk,
-        \nMy vision for my business in the long term: get rich\n
-        Give me please three best business ideas.
-        """
+   
 
 
     b=ChatInMenu(prompt)
