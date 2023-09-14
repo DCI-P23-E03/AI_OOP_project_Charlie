@@ -17,7 +17,7 @@ class BusinessIdeasChat:
         self._list_of_menu_items=[self.menu_title]
         self._make_system_role()
         self.__initialize_conversation()
-        
+        """Get and analyze first Chatgpt answer to <initial_prompt>"""
         self.response = openai.ChatCompletion.create(
             model="gpt-4",
             messages=self.conversation
@@ -32,17 +32,17 @@ class BusinessIdeasChat:
         "expert": <suggested expert for the item>,
         "content": <part of AI answer referring to the item>,
         "prompt": <user prompt to elaborate on the item. Present only if the user asked to elaborate>,
-        "elaborate": [<nested list of the same format>]}]
+        "elaborate": [<nested list of the same format>]}] Present only if the user asked to elaborate
         """
-        for i in self.__database[1:]:
+        for i in self.__database[1:]:  #List of menu items is initialised with "title"'s from the database. It will be used to initialize menu
             self._list_of_menu_items.append([i["title"]])
         
 
-    def _make_system_role(self):
+    def _make_system_role(self): #changes the system role according to the suggested expert for the particular prompt
         self.system_role=f"""Imagine it's September 2021.You are the best {self.__expert} in the world with 25 years of experience and in depth knowledge of business, markets, strategies, start-ups etc. No need to mention the current year in the answer. All answers are to be given strictly in form of numbered lists of items with a new line after each item including the final one. Each list item is given strictly in the format: number. #short description in maximum five word# $the expert to be addressed for elaboration of this item$ - |longer description of the item in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion
         """
 
-    def __initialize_conversation(self):
+    def __initialize_conversation(self):#initializes initial prompt. Also used every time for emulating the conversation with AI in <create_prompt>
         self.conversation=[{"role": "system", "content": self.system_role},{"role": "user", "content": self.initial_prompt}]
 
     def _parse_response(self): # parses the response and returns the next level entry to the database
@@ -73,9 +73,9 @@ class BusinessIdeasChat:
         self.__expert=cur_dialog_step["expert"]
         self._make_system_role() #new system role with new expert
         self.conversation[0]["content"]=self.system_role
-        if len(coords)==1:
+        if len(coords)==1: #if asked to elaborate on business proposal
             prompt=f"You are the best {self.__expert} in the whole world, with 25 years experience. I am your client and i want to start {cur_dialog_step['title']}. Describe in detail and write what is needed to start. No need to mention the current year in the answer. Write strictly in the format: number. #name of the business action# $expert to address for detailed information$ - |description of the business action as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion"
-        else:
+        else:  #if asked to elaborate on a deeper level
             prompt=f"Your current choice of business action is {cur_dialog_step['title']}. Imagine it's September 2021. you're the best {self.__expert} in the whole world, with 25 years of experience. I'm your client and i want you to fetch me a detailed report on bullet points to this business action using the following information: \n{cur_dialog_step['content']} \nNo need to mention the current year in the answer. Write strictly in the format: number. #name of the bullet point# $expert to adress for more detailed information about the bullet point$ - |description of the bullet point as a single block in imperative form for the second person| Use only these seperators:#$| Use those separators only in the beginning and the end of the logical group. Do not write an introduction or a conclusion"
         
         self.conversation.append({"role": "user", "content": prompt})
@@ -86,9 +86,10 @@ class BusinessIdeasChat:
         self.assistant_message=self.response['choices'][0]['message']['content']
         self.__append_database(coords,prompt,self._parse_response()) # adds prompt and response to the database
         self.__append_list_menu_items(coords)
-        return self._list_of_menu_items
+        return self._list_of_menu_items #used to update the menu structure
 
     def __append_list_menu_items(self,coords):
+        """Adds 'title's from database to the nested list_of_menu_items according to list <coords>"""
 
         def append_list_menu_items(lst,data,coords):
             if len(coords)==1:
@@ -104,6 +105,7 @@ class BusinessIdeasChat:
         
 
     def __append_database(self, coords, prompt, elaborate):
+        """Adds 'prompt's and "elaborate" lists to database to a location given by the list <coords>"""
         
         def append_database(data, coords, prompt, elaborate):
             if len(coords)==1:
@@ -117,6 +119,8 @@ class BusinessIdeasChat:
         self.__database=append_database(data, coords, prompt, elaborate)
 
     def _access_database(self,coords):
+        """Accesses the database at the location given by <coords> If coords==[] it can be used to read the private __database"""
+
         data=self.__database
         for i in coords:
             data=data[i]["elaborate"]

@@ -12,7 +12,7 @@ from create_report import create_report_as_md_file, md_to_pdf,send_email
 
 
 
-def create_prompt():
+def create_prompt():  #User input
     skills_comp=input("What are your primary skills and competencies?: ")
     experience=input("In which industries or sectors do you have experience or education?: ")
     hobbies=input("What hobbies or interests do you have?: ")
@@ -52,12 +52,14 @@ def create_prompt():
 class ChatInMenu(BusinessIdeasChat,VerticalMenu):
     def __init__(self, initial_prompt):
         print("\n"+colored("Generating 3 business ideas for you...","blue"))
-        super().__init__(initial_prompt)
+        super().__init__(initial_prompt)  #initializing chat, also creating the seeding list_of menu_items for the menu
         self.menu_title=colored("IdeaAlchemy: Craft Your Success","light_yellow",attrs=["bold"])+"\n\nUse "+colored("a s w", "red")+" navigate, "+colored("f","green")+" to select or unselect, "+colored("d","blue")+" to open or to execute, "+colored("x","red")+" to create report and exit."
         self._list_of_menu_items[0]=self.menu_title
-        VerticalMenu.__init__(self,self._list_of_menu_items,25)
+        VerticalMenu.__init__(self,self._list_of_menu_items,25) #25 is a universal constant :) Ugly, I know
 
     def execute(self, *args):
+        """Elaborates on all selected items one by one and prints the response. A conversation history is emulated for each prompt to save tokens and in order not to confuse the AI too much"""
+
         x("clear")
         for i in self.selected:
             x_coords=self.coords[:-1]
@@ -69,10 +71,12 @@ class ChatInMenu(BusinessIdeasChat,VerticalMenu):
         print("\nPress any key to return to menu or "+colored('x','red')+" to stop and generate report")
         mov=getch.getch()
         self.selected.clear()
-        return mov
+        return mov  #if mov==x it will actually trigger break in navigate_menu()!
     
     def navigate_menu(self):
         super().navigate_menu()
+        """After normal menu work is done and exit is done regularly with 'x' key, log, report and email are generated. Meaning that if you decide to stop the code with ctrl-C all data is lost. Maybe should (have) fix(ed) that..."""
+
         data=self._access_database([])
         with open("log.json", "w") as file:
             json.dump(data,file, indent=4)
@@ -102,11 +106,11 @@ def main():
    
 
 
-    b=ChatInMenu(prompt)
+    b=ChatInMenu(prompt)#upon initialization the initial_prompt is sent to Chatgpt, list_of_menu_items is created, menu is initialized with the latter and printed. Below AI response is printed.
     for item in b._access_database([])[1:]:
         print(item["num"]+". "+colored(item["title"],"green")+"\n"+item["content"])
     print("\n")
-    print("Navigate the menu to choose what ideas to eleborate on. Press any key to get to menu.")
+    print(colored("Navigate the menu to choose what ideas to elaborate on. Press any key to get to menu.","blue"))
     getch.getch()
     
     b.navigate_menu()

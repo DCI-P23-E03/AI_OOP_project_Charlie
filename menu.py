@@ -6,6 +6,7 @@ import getch
 
 
 class Menu(ABC):
+    """Abstract class defining only basic concepts of menus"""
 
     MAX_HORIZONTAL_SIZE=72
     MAX_VERTICAL_SIZE=36
@@ -14,7 +15,7 @@ class Menu(ABC):
         
         self.coords=[1]
         #self.selected=set()
-        self.W=W
+        self.W=W #width of menu item
         self.N=len(list_of_menu_items)-1
         self.list_of_menu_items=list_of_menu_items
         self._menu = self._generate_menu()
@@ -27,16 +28,18 @@ class Menu(ABC):
         
     def print_menu(self):
         x("clear")
-        print(self.list_of_menu_items[0]+"\n")
+        print(self.list_of_menu_items[0]+"\n") #[0] element of <list_of_menu_items> is printed above the menu
         print(self._menu)
 
-    def _access_menu_item(self,lst):
+    def _access_menu_item(self,lst): #returns the element of the nested list at the location given by <lst>
         item=self.list_of_menu_items
         for i in lst:
             item=item[i]
         return item
     
     def _move_down_menu(self):
+        """This and following functions describe basic behavior while navigating the menu. Should be changed only in case of great need. Maybe apart from the switch_top_menu_item one."""
+
         depth=len(self.coords)
         if depth==1:
             menu_length=self.N
@@ -71,7 +74,7 @@ class Menu(ABC):
 
 
     @abstractmethod
-    def navigate_menu(self):
+    def navigate_menu(self):  #concrete realization is up to user and strongly depends on geometry and appearance. This particular realisation is suitable for a normal (horizontal) menu
         while True:
             depth=len(self.coords)
             move=getch.getch()
@@ -98,7 +101,7 @@ class Menu(ABC):
 
 
     @abstractmethod
-    def execute(self):
+    def execute(self): #is called by _open_menu_item if there is nothing to open (at least by default). As it is clearly extremely problem-dependent, advisable to define in the lowest hirarchy class
         pass
 
     
@@ -107,7 +110,7 @@ class VerticalMenu(Menu):
 
     _instance=None
 
-    def __new__(cls,*args,**kwargs):
+    def __new__(cls,*args,**kwargs):  #singlton. If menu class is used properly by updating list_of_menu_items and coords, not really needed. But just in case someone decides to initiate a new menu object each time user presses a button, could be useful.
         
         if not cls._instance:
             cls._instance=super().__new__(cls)
@@ -118,7 +121,7 @@ class VerticalMenu(Menu):
         super().__init__(list_of_menu_items, W)
         #self.selected=set()
         
-        if 2*self.N>super().MAX_VERTICAL_SIZE:
+        if 2*self.N>super().MAX_VERTICAL_SIZE:  #can be customized
             raise ValueError("Menu too large") 
         if self.W<6:
             raise ValueError("Menu items too small")
@@ -126,7 +129,7 @@ class VerticalMenu(Menu):
     
         
 
-    def execute(self,*args):
+    def execute(self,*args):  #some BS for testing purposes. Is (and should be!) overwritten in the child class. Actually the method must be an abstract one, just decided not to touch something that is working without serious need.
         
         def __append_nested_list(nested_list,coords,to_append):
             if len(coords)==1:
@@ -147,7 +150,7 @@ class VerticalMenu(Menu):
         self.selected.clear()
 
     
-    def __select_menu_item(self):
+    def __select_menu_item(self):  #Better suited in the child class, here for histrorical reasons.
         
         if len(self._access_menu_item(self.coords))==1:
             if self.coords[-1] not in self.selected:
@@ -158,7 +161,7 @@ class VerticalMenu(Menu):
                 self.selected.discard(self.coords[-1])
                 
 
-    def _close_menu_item(self):
+    def _close_menu_item(self): #these two functions are changed compared to parent class against all reasoning due to the particular way the selecting of menu items is realised.
         super()._close_menu_item()
         self.selected.clear()
 
@@ -184,23 +187,27 @@ class VerticalMenu(Menu):
                 self._move_down_menu()
             if move == "w":
                 self._move_up_menu()
-            if move.isdigit():
+            if move.isdigit():  #never tested actually...
                 self._switch_top_menu_item(int(move))
             if move=="f":
                 self.__select_menu_item()
             if move == "d" or move == " ":
-                move = self._open_menu_item()
+                move = self._open_menu_item()  #if execute() ends with "press any key to continue" and that key is returned by the function, the next if-statement will be checked and can still stop the program. So the particular order of if-statements here and the fact that if-elif-else is not used is a feature, not a bug.
             
             if move=="x":
                 break
             #print(self.coords,self._access_menu_item(self.coords))
 
-    def __chop_menu_entry(self,menu_entry):
+    def __chop_menu_entry(self,menu_entry): #if menu entry is too long
         if len(menu_entry)>self.W-2:
             return menu_entry[:self.W-3]+"…"
         return menu_entry
 
     def _generate_menu(self):
+        """
+        Quite general and optically pleasing, but still a matter of taste. Can be changed. Good luck if you decide to.
+        """
+ 
         #sizes=[self.N]
         items=self.list_of_menu_items
         max_vert_size=self.N
@@ -208,19 +215,17 @@ class VerticalMenu(Menu):
         cur_vert_position=1
         top_of_menu=[1]
         bottom_of_menu=[self.N]
-        for i in self.coords[:-1]:
+        for i in self.coords[:-1]:#determines the size of the menu with particular submenus opened and the positions of opened menus at each sublevel
             items=items[i]
             #sizes.append(len(items)-1)
             cur_vert_position+=i-1
-            top_of_menu.append(cur_vert_position)
+            top_of_menu.append(cur_vert_position) #top and bottom of opened submenu at current sublevel
             bottom_of_menu.append(cur_vert_position+len(items)-2)
-            max_vert_size=max(max_vert_size,bottom_of_menu[-1])
-        #print(top_of_menu)
-        #print(bottom_of_menu)
-        #print(self.coords)
-        filled=[]
-        len_cur_item=len(self._access_menu_item(self.coords)[0])
-        #print(len_cur_item)
+            max_vert_size=max(max_vert_size,bottom_of_menu[-1])  #lowest (geometrically) menu item on all sublevels
+        
+        filled=[]#will be filled with visible menu items or zeros if at a given position there is no item
+        len_cur_item=len(self._access_menu_item(self.coords)[0])#will be used to expand active menu item if menu entry is too long
+        
         long_menu_item=len_cur_item>self.W-2
         
         for _ in range(max_vert_size):
@@ -229,6 +234,7 @@ class VerticalMenu(Menu):
         #print(self.selected)
 
         for i in range(depth):
+            """fills <filled[]> with data and zeros. Also adds hooks for selected items and arrows for items with subitems"""
             for j in range(max_vert_size):
                 if j>=top_of_menu[i]-1 and j<bottom_of_menu[i]:
                     cur_entry=self._access_menu_item(self.coords[:i])[j+2-top_of_menu[i]]
@@ -259,6 +265,11 @@ class VerticalMenu(Menu):
         print_menu=""
         bottom_line=""
         
+        """Produces the menu with its content. Actually something might go wrong if menu item is empty, didn't check that. (bool("") is False just as bool(0), so... do not use empty menu cells :))
+        Looping throught the cells, for each cell it is determined if cells left, up and up-left from it are 
+        filled. Based on it the cell borders are drawn. This is written in a general way not assuming particular realisation of menu geometry, for example it is not assumed top left corner is always filled as it is in this particular realisation of this very function. Probably would be better to split this big ugly function in 3 or 4 smaller ones because of this seeming overkill. But again, if it is working - do not touch it. I strongly recommend not to change this part even if you change the rest of generate_menu function. At least not the parts that actually draw the cells. 
+        """
+
         for j in range(max_vert_size):
             menu_content=""
             
@@ -361,7 +372,7 @@ class VerticalMenu(Menu):
 
 
     
-class HorizontalMenu(Menu):
+class HorizontalMenu(Menu): #basically a placeholder
 
     def __init__(self, list_of_menu_items, W):
         super().__init__(list_of_menu_items, W)
